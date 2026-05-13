@@ -1,0 +1,141 @@
+﻿R55 K42 SHADOW DELTA AUDIT SUMMARY
+==================================
+
+Run directory:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607
+
+Main result file:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\R55_ALL_KNOWN_K42_DELTA_AUDIT.tsv
+
+Main result SHA256:
+9827F4E21CE13ECA3B9A75AA2185D2B19949C1BBA3EE1DCDDB27B193DB80D70D
+
+Manifest file:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\MANIFEST_SHA256.txt
+
+Manifest SHA256:
+BF909032B2C9A45F24D85C05D80C5572C9DA3B603487DE3BA130579C5DD3B924
+
+1. Core result
+--------------
+
+Total K42 records tested:
+674
+
+Unique K42 bit-hash records:
+674
+
+Status counts:
+DELTA_GE_3_PROVED: 670
+DELTA_EXACTLY_2_PROVED: 4
+
+Phi 0 / Phi 1 exclusion check:
+phi0_exists=False, phi0_timeout=False, phi1_exists=False, phi1_timeout=False: count=674
+
+Main conclusion:
+For all tested K42 records, Phi=0 was excluded and Phi=1 was excluded without timeout.
+
+Therefore:
+delta(G) >= 2 for all tested K42 records.
+
+Detailed result:
+- DELTA_EXACTLY_2_PROVED: Phi=0 and Phi=1 excluded, Phi=2 witness found.
+- DELTA_GE_3_PROVED: Phi=0, Phi=1, and Phi=2 excluded.
+
+2. Interpretation
+-----------------
+
+The repeated R(5,5), n=43 score=2 behavior is not a random hunter artifact.
+
+It is explained by the one-vertex shadow formula:
+
+score(H) = score(H - v) + Phi_G(x)
+
+where:
+- G is the K42 core,
+- x is the new vertex connection vector,
+- Phi_G(x) counts red K4 shadows hit by x plus blue K4 shadows hit by complement(x).
+
+Earlier local tests confirmed:
+- 48 unique clean K42 cores extracted from K43 score-2 candidates had delta(G)=2.
+- In the full scanned K42 set, all records have delta(G)>=2.
+- Only a small subset has delta(G)=2.
+- Most scanned records have delta(G)>=3.
+
+3. What is proved by this run
+-----------------------------
+
+This run proves for the scanned K42 record set:
+
+- No Phi=0 shadow extension exists.
+- No Phi=1 shadow extension exists.
+- No Phi=0 or Phi=1 test timed out.
+- The scanned K42 records do not produce K43 through a zero-defect or one-defect shadow.
+- The nearest verified shadow boundary is Phi=2, but it is rare in the scanned full set.
+
+4. What is not yet proved
+-------------------------
+
+This does not yet prove globally that R(5,5)=43.
+
+Reason:
+A global proof would require showing that every possible K42, including unknown or uncatalogued K42 classes, has no Phi=0 shadow extension to K43.
+
+Current scope:
+- Scanned workspace K42 records.
+- Unique labelled bit-hash records.
+- Not yet a certified complete isomorphism-class catalogue proof.
+
+5. Next checks
+--------------
+
+A. Official catalogue isolation
+Run the same audit only on the official r55_42some.g6 file and its complements.
+
+Goal:
+Separate official catalogue evidence from workspace/relabelled/private generated records.
+
+Expected output:
+OFFICIAL_K42_CATALOGUE_AUDIT
+- number of official source records
+- number with complements
+- Phi=0 excluded
+- Phi=1 excluded
+- delta=2 count
+- delta>=3 count
+
+B. 48 score-2 core comparison
+Compare the 48 delta=2 score-2 basin cores against the full K42 audit hashes.
+
+Goal:
+Determine whether the 48 boundary cores are present in the full audit input set or were missed because of file format / input scope.
+
+C. Complement pairing audit
+For every K42 record, pair G with complement(G).
+
+Goal:
+Check whether delta class is invariant under complement:
+- delta=2 source should pair with delta=2 complement.
+- red_phi / blue_phi should swap.
+
+D. Delta depth audit for DELTA_GE_3 records
+For the 670 records with DELTA_GE_3_PROVED, optionally test Phi=3 and Phi=4.
+
+Goal:
+Classify the harder K42 shadow layers:
+- delta=3
+- delta=4
+- delta>4
+
+E. Public claim package
+Create a redacted evidence package:
+- report
+- result TSV
+- manifest
+- SHA256 hashes
+- no private solver internals
+- no claim of full R(5,5)=43 proof
+
+Safe claim:
+The scanned K42 record set has no zero-defect or one-defect one-vertex shadow extension to K43. The observed score=2 candidates are explained by exact K42 shadow barriers.
+
