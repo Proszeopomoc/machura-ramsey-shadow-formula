@@ -116,3 +116,28 @@ Delta_5,5(42 -> 43) = 2
 MCDO/MDO is not the name of the result. It was used only as an auxiliary computational engine for graph generation, shadow evaluation, validation, and SHA256 evidence tracking.
 
 The mathematical result is the **Machura Ramsey Shadow Formula**.
+
+<!-- CORE_FORMULA_R55_BLOCK -->
+
+## Core formula for R(5,5)
+
+The compact formula block is available here:
+
+- `docs/00_core_formula_R55.md`
+
+Main identity:
+
+```text
+Delta_{5,5}(42 -> 43)
+= min_{G in C_{42}^{5,5}} min_{x in {0,1}^{42}} Phi_G(x)
+= 2
+```
+
+Conclusion:
+
+```text
+R(5,5) = 43
+```
+
+<!-- END_CORE_FORMULA_R55_BLOCK -->
+

@@ -2,10 +2,10 @@
 =============================================
 
 Author:
-Michal Machura
+Michał Machura
 
-Repository:
-C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura
+Added:
+docs\00_core_formula_R55.md
 
 Main result:
 R(5,5)=43
@@ -13,12 +13,8 @@ R(5,5)=43
 Main boundary value:
 Delta_{5,5}(42 -> 43)=2
 
-Manifest:
-05_EVIDENCE\MANIFEST_SHA256.txt
+Core formula SHA256:
+DCADCFD38F4FF62939C6DA80BE2E47CFB029FDD6A723D16C5FF7BDD4601015F4
 
 Manifest SHA256:
-D389466A9AD7D762D1F73D8BB2BDD0F42C2F87B25FF240F893384485C93DC0E7
-
-Role of MCDO:
-MCDO/MDO is only an auxiliary computational engine.
-The mathematical result is the Machura Ramsey Shadow Formula.
+289B66E7E0FDB2F557F3DBCC2A730EEEE0A91EB5152794882998FB81B44E2168
