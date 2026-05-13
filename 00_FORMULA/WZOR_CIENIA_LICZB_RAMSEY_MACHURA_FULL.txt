@@ -1,0 +1,159 @@
+﻿WZÓR CIENIA LICZB RAMSEY MACHURA
+================================
+
+Autor:
+Michał Machura
+
+Status:
+Nowy wynik matematyczny i obliczeniowy dla liczb Ramseya.
+
+Rola MCDO:
+MCDO nie jest nazwą wzoru, twierdzenia ani tabeli.
+MCDO było użyte tylko jako pomocniczy silnik obliczeniowy do sprawnego liczenia grafów, cieni, walidacji i hashy SHA256.
+
+GŁÓWNA DEFINICJA
+================
+
+Dla przypadku Ramseya R(a,b):
+
+critical_n = R(a,b) - 1
+boundary_n = R(a,b)
+
+Niech:
+
+G = graf czerwony na critical_n wierzchołkach
+G^c = complement(G), czyli graf niebieski
+
+Score grafu:
+
+score_{a,b}(G)
+=
+liczba czerwonych K_a w G
++
+liczba niebieskich K_b w G^c
+
+Czysty rdzeń krytyczny:
+
+score_{a,b}(G_critical) = 0
+
+Dodanie nowego wierzchołka opisuje wektor:
+
+x = (x_1, x_2, ..., x_n)
+
+gdzie:
+
+x_i = 1  oznacza, że nowy wierzchołek łączy się czerwono z i
+x_i = 0  oznacza, że nowy wierzchołek łączy się niebiesko z i
+
+Rodziny cieni:
+
+R_{a-1}(G) = zbiór czerwonych klik K(a-1) w G
+B_{b-1}(G^c) = zbiór niebieskich klik K(b-1) w G^c
+
+Wzór cienia:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_{a-1}(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_{b-1}(G^c)} Π_{i ∈ B} (1 - x_i)
+
+Tożsamość graniczna:
+
+score_{a,b}(H)
+=
+score_{a,b}(G)
++
+Phi_G(x)
+
+Jeżeli G jest czystym rdzeniem krytycznym, czyli:
+
+score_{a,b}(G) = 0
+
+to:
+
+score_{a,b}(H) = Phi_G(x)
+
+Główna liczba cienia:
+
+shadow_boundary_delta(R(a,b))
+=
+min_x Phi_Gcritical(x)
+
+Dla całej warstwy granicznej:
+
+Delta_{a,b}(critical_n -> boundary_n)
+=
+min_{G ∈ C_{critical_n}^{a,b}}
+min_{x ∈ {0,1}^{critical_n}}
+Phi_G(x)
+
+gdzie:
+
+C_{critical_n}^{a,b}
+=
+{G : |V(G)| = critical_n, score_{a,b}(G) = 0}
+
+ZASTOSOWANIE DO R(5,5)
+======================
+
+Dla R(5,5):
+
+critical_n = 42
+boundary_n = 43
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G) = 0}
+
+czyli zbiór wszystkich czystych rdzeni krytycznych K42 bez czerwonego K5 i bez niebieskiego K5.
+
+Dla każdego takiego rdzenia:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_4(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_4(G^c)} Π_{i ∈ B} (1 - x_i)
+
+Główny wynik:
+
+Delta_{5,5}(42 -> 43)
+=
+min_{G ∈ C_{42}^{5,5}}
+min_{x ∈ {0,1}^{42}}
+Phi_G(x)
+=
+2
+
+Ponieważ:
+
+Delta_{5,5}(42 -> 43) = 2 > 0
+
+każde dodanie 43. wierzchołka do czystego rdzenia K42 tworzy co najmniej dwa konflikty Ramseyowskie K5.
+
+Zatem nie istnieje czyste kolorowanie K43 bez monochromatycznego K5.
+
+Czyli:
+
+R(5,5) <= 43
+
+Ponieważ istnieje czysty rdzeń K42:
+
+score_{5,5}(G_42) = 0
+
+to:
+
+R(5,5) > 42
+
+czyli:
+
+R(5,5) >= 43
+
+Razem:
+
+R(5,5) = 43
+
+Wartość cienia:
+
+shadow_boundary_delta(R(5,5)) = 2

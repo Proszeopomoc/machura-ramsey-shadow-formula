@@ -1,0 +1,22 @@
+﻿# Windows
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local/private runs
+03_RUNS_PRIVATE/
+*_BACKUP_*/
+*_OLD_*/
+*_PRIVATE_*/
+
+# Temporary/cache
+*.tmp
+*.log
+cache/
+raw/
+private/

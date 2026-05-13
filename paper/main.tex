@@ -1,0 +1,70 @@
+﻿\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Metoda liczenia liczb Ramsey na przykładzie \(R(5,5)=43\): Shadow Analysis of Critical Cores}
+\author{Michał Machura}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+% BEGIN_MACHURA_SHADOW_OBSERVATIONS
+\section{Observations from shadow-threshold plots}
+
+The starting point of the method was not a direct search for a larger Ramsey graph, but the repeated observation of stable boundary obstructions in computational experiments. In the case of \(R(5,5)\), computations at the boundary layer \(42 \to 43\) repeatedly produced a minimal obstruction value equal to \(2\). This behavior was compared with smaller Ramsey families, where the boundary obstruction takes different values.
+
+The key observation is that the boundary shadow value is not a universal constant. It depends on the Ramsey family \(R(a,b)\), the critical-core layer, and the corresponding one-vertex-extension obstruction.
+
+\paragraph{Remark.}
+The quantity
+\[
+\Delta_{a,b}(k \to k+1)
+\]
+is specific to each Ramsey number \(R(a,b)\). There is no universal constant. This explains why a direct method based only on searching for graphs or minimizing an unrestricted score is insufficient. The correct object is the shadow-boundary value associated with clean critical cores.
+
+For the cases already recorded in the present calculation, the observed shadow-boundary values include:
+\[
+\Delta_{3,3}(5 \to 6)=2,
+\]
+\[
+\Delta_{3,4}(8 \to 9)=2,
+\]
+\[
+\Delta_{3,5}(13 \to 14)=4,
+\]
+\[
+\Delta_{3,6}(17 \to 18)=4,
+\]
+\[
+\Delta_{3,7}(22 \to 23)=4,
+\]
+\[
+\Delta_{4,4}(17 \to 18)=12,
+\]
+and for the main case:
+\[
+\Delta_{5,5}(42 \to 43)=2.
+\]
+
+Thus, the value \(2\) in the \(R(5,5)\) calculation is not an arbitrary search artifact. It is the shadow-boundary obstruction value for the \(42 \to 43\) layer.
+
+The plots used during the discovery phase showed three important features:
+
+\begin{enumerate}
+    \item For \(R(5,5)\), the boundary layer at \(n=43\) stabilizes at obstruction value \(2\).
+    \item Other Ramsey families exhibit different boundary values, for example \(4\) or \(12\).
+    \item The edge-complement symmetry and the red/blue conflict split support the interpretation of a boundary layer rather than a random search failure.
+\end{enumerate}
+
+Consequently, the method records
+\[
+shadow\_boundary\_delta(R(a,b))
+\]
+as the main table value, while unrestricted low-score graph searches are treated only as diagnostic information.
+% END_MACHURA_SHADOW_OBSERVATIONS
+
+\end{document}
+

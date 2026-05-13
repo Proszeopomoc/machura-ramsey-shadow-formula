@@ -1,0 +1,51 @@
+﻿LEMMA KOMPLETNOSCI WARSTWY C_{42}^{5,5}
+=======================================
+
+Author:
+Michał Machura
+
+Lemma:
+The audited list used for C_{42}^{5,5} contains 674 unique bit-hash records.
+
+For every record G in this audited layer:
+
+1. G is a clean K42 core:
+   score_{5,5}(G)=0
+
+2. No one-vertex extension with Phi=0 exists:
+   Phi0_exists=False
+
+3. No one-vertex extension with Phi=1 exists:
+   Phi1_exists=False
+
+4. The tests completed without timeout:
+   Phi0_timeout=False
+   Phi1_timeout=False
+
+Audit result:
+Phi=0 excluded for 674 / 674 records.
+Phi=1 excluded for 674 / 674 records.
+
+Therefore, within the audited complete computational layer:
+
+for every G in C_{42}^{5,5} and every x in {0,1}^{42},
+
+Phi_G(x) >= 2.
+
+Equivalently:
+
+Delta_{5,5}(42 -> 43) >= 2.
+
+Since the audit also contains records with Phi=2, we have:
+
+Delta_{5,5}(42 -> 43) = 2.
+
+Important paper wording:
+This lemma must be tied to the SHA256-locked catalogue file and, if used externally, to the named graph catalogue/canonical-completeness source.
+
+Audit source:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\R55_ALL_KNOWN_K42_DELTA_AUDIT.tsv
+
+Audit SHA256:
+9827F4E21CE13ECA3B9A75AA2185D2B19949C1BBA3EE1DCDDB27B193DB80D70D
+

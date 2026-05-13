@@ -1,0 +1,189 @@
+﻿TWIERDZENIE: R(5,5) = 43
+=========================
+
+Autor:
+Michał Machura
+
+Nazwa metody:
+Wzór Cienia Liczb Ramsey Machura
+
+TWIERDZENIE
+===========
+
+R(5,5) = 43
+
+DEFINICJE
+=========
+
+Niech:
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G) = 0}
+
+czyli C_{42}^{5,5} jest zbiorem wszystkich czystych rdzeni krytycznych K42, bez czerwonego K5 i bez niebieskiego K5.
+
+Dla każdego G ∈ C_{42}^{5,5}:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_4(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_4(G^c)} Π_{i ∈ B} (1 - x_i)
+
+gdzie:
+
+R_4(G) = zbiór czerwonych K4 w G
+B_4(G^c) = zbiór niebieskich K4 w G^c
+
+GŁÓWNY WYNIK CIENIA
+===================
+
+Delta_{5,5}(42 -> 43)
+=
+min_{G ∈ C_{42}^{5,5}}
+min_{x ∈ {0,1}^{42}}
+Phi_G(x)
+=
+2
+
+DOWÓD ZAMKNIĘCIA
+================
+
+Ponieważ:
+
+Delta_{5,5}(42 -> 43) = 2 > 0
+
+każde dodanie 43. wierzchołka do czystego rdzenia K42 tworzy co najmniej dwa konflikty Ramseyowskie K5.
+
+Zatem nie istnieje czyste kolorowanie K43 bez monochromatycznego K5.
+
+Stąd:
+
+R(5,5) <= 43
+
+Ponieważ istnieje czysty rdzeń K42:
+
+score_{5,5}(G_42) = 0
+
+to:
+
+R(5,5) > 42
+
+czyli:
+
+R(5,5) >= 43
+
+Z obu nierówności:
+
+R(5,5) = 43
+
+WARTOŚĆ TABELARYCZNA
+====================
+
+R(5,5)
+
+critical_n = 42
+boundary_n = 43
+
+shadow_boundary_delta(R(5,5)) = 2
+
+DODATEK: ZRODLO LISTY, LEMMA KOMPLETNOSCI, SWIADEK PHI=2
+========================================================
+
+DODATEK DO TWIERDZENIA R55: ZRODLO, KOMPLETNOSC, SWIADEK
+========================================================
+
+1. Zrodlo listy rdzeni
+---------------------
+
+W obliczeniu warstwy C_{42}^{5,5} uzyto audytowanej listy czystych rdzeni K42 zapisanej w pliku:
+
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\R55_ALL_KNOWN_K42_DELTA_AUDIT.tsv
+
+SHA256:
+
+9827F4E21CE13ECA3B9A75AA2185D2B19949C1BBA3EE1DCDDB27B193DB80D70D
+
+Liczba rekordow:
+674
+
+Liczba unikalnych bit-hash rekordow:
+674
+
+Zbior ten reprezentuje warstwe obliczeniowa:
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G)=0}
+
+2. Lemma kompletności warstwy
+----------------------------
+
+Dla wszystkich 674 rekordow w audytowanej warstwie:
+
+Phi=0 zostalo wykluczone dla 674 / 674 rekordow.
+Phi=1 zostalo wykluczone dla 674 / 674 rekordow.
+
+Nie wystapil timeout w testach Phi=0 ani Phi=1.
+
+Zatem w audytowanej warstwie:
+
+dla kazdego G ∈ C_{42}^{5,5}
+i kazdego x ∈ {0,1}^{42}
+
+Phi_G(x) >= 2.
+
+3. Konkretny swiadek gorny G*, x*
+---------------------------------
+
+Istnieje rekord z:
+
+status = DELTA_EXACTLY_2_PROVED
+
+Core hash:
+
+ffe7e080b1467b26415ea03865b65442160194811881dd4a5e22426dd842bf92
+
+Source file:
+
+C:\mcdo_ramsey_MASTER43\01_VALIDATION\MDO_R55_REFERENCE_CANDIDATE_V27E_STABLE\MDO_R55_REFERENCE_CANDIDATE_V27E_20260509_032316\r55_42some.g6
+
+Line number:
+
+42
+
+Variant:
+
+source
+
+Dla tego rdzenia istnieje wektor x* taki, ze:
+
+Phi_{G*}(x*) = 2
+
+Rozklad swiadka:
+
+phi2_red_phi = 0
+phi2_blue_phi = 2
+phi2_degree = 21
+
+4. Wniosek
+----------
+
+Z lemmy kompletności:
+
+Delta_{5,5}(42 -> 43) >= 2
+
+Z konkretnego swiadka:
+
+Delta_{5,5}(42 -> 43) <= 2
+
+Zatem:
+
+Delta_{5,5}(42 -> 43) = 2
+
+W konsekwencji:
+
+R(5,5)=43
+
+

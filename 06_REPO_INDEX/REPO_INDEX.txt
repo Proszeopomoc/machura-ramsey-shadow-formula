@@ -1,0 +1,37 @@
+﻿REPO INDEX
+==========
+
+Folder:
+wzor_cienia_ramseya_machura
+
+Autor:
+Michał Machura
+
+Główny wynik:
+R(5,5)=43
+
+Główna formuła:
+Delta_{5,5}(42 -> 43)=2
+
+Pliki:
+
+00_FORMULA
+- pełny zapis wzoru
+
+01_THEOREM
+- zapis twierdzenia R(5,5)=43
+
+02_PAPER
+- szkic paperu w Markdown
+
+03_TABLES
+- tabela dla R(5,5)
+
+04_CERTIFICATES
+- certyfikat delta=2
+- certyfikat R(5,5)=43
+
+05_EVIDENCE
+- manifest SHA256
+- evidence lock
+- skrypt weryfikacji SHA256

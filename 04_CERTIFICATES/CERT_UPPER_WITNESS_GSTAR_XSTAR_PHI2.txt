@@ -1,0 +1,72 @@
+﻿UPPER WITNESS CERTIFICATE: EXISTS G*, x* WITH Phi=2
+===================================================
+
+Author:
+Michał Machura
+
+Purpose:
+Provide a concrete upper witness for:
+
+Delta_{5,5}(42 -> 43) <= 2
+
+Selected audit row:
+status = DELTA_EXACTLY_2_PROVED
+
+Core hash:
+ffe7e080b1467b26415ea03865b65442160194811881dd4a5e22426dd842bf92
+
+Source file:
+C:\mcdo_ramsey_MASTER43\01_VALIDATION\MDO_R55_REFERENCE_CANDIDATE_V27E_STABLE\MDO_R55_REFERENCE_CANDIDATE_V27E_20260509_032316\r55_42some.g6
+
+Line number:
+42
+
+Variant:
+source
+
+K4 counts:
+red_K4_count = 1185
+blue_K4_count = 1133
+
+Phi=0:
+exists = False
+timeout = False
+nodes = 133
+elapsed_s = 0.656
+
+Phi=1:
+exists = False
+timeout = False
+nodes = 799
+elapsed_s = 3.304
+
+Phi=2:
+exists = True
+timeout = False
+nodes = 1796
+elapsed_s = 7.491
+
+Witness split:
+phi2_red_phi = 0
+phi2_blue_phi = 2
+phi2_degree = 21
+
+Conclusion:
+This row is a concrete certificate that a critical core G* admits an extension vector x* with:
+
+Phi_{G*}(x*) = 2.
+
+Therefore:
+
+Delta_{5,5}(42 -> 43) <= 2.
+
+Combined with the completeness lemma excluding Phi=0 and Phi=1 for the full audited layer, we get:
+
+Delta_{5,5}(42 -> 43) = 2.
+
+Audit source:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\R55_ALL_KNOWN_K42_DELTA_AUDIT.tsv
+
+Audit SHA256:
+9827F4E21CE13ECA3B9A75AA2185D2B19949C1BBA3EE1DCDDB27B193DB80D70D
+

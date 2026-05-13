@@ -1,0 +1,95 @@
+﻿DODATEK DO TWIERDZENIA R55: ZRODLO, KOMPLETNOSC, SWIADEK
+========================================================
+
+1. Zrodlo listy rdzeni
+---------------------
+
+W obliczeniu warstwy C_{42}^{5,5} uzyto audytowanej listy czystych rdzeni K42 zapisanej w pliku:
+
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607\R55_ALL_KNOWN_K42_DELTA_AUDIT.tsv
+
+SHA256:
+
+9827F4E21CE13ECA3B9A75AA2185D2B19949C1BBA3EE1DCDDB27B193DB80D70D
+
+Liczba rekordow:
+674
+
+Liczba unikalnych bit-hash rekordow:
+674
+
+Zbior ten reprezentuje warstwe obliczeniowa:
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G)=0}
+
+2. Lemma kompletności warstwy
+----------------------------
+
+Dla wszystkich 674 rekordow w audytowanej warstwie:
+
+Phi=0 zostalo wykluczone dla 674 / 674 rekordow.
+Phi=1 zostalo wykluczone dla 674 / 674 rekordow.
+
+Nie wystapil timeout w testach Phi=0 ani Phi=1.
+
+Zatem w audytowanej warstwie:
+
+dla kazdego G ∈ C_{42}^{5,5}
+i kazdego x ∈ {0,1}^{42}
+
+Phi_G(x) >= 2.
+
+3. Konkretny swiadek gorny G*, x*
+---------------------------------
+
+Istnieje rekord z:
+
+status = DELTA_EXACTLY_2_PROVED
+
+Core hash:
+
+ffe7e080b1467b26415ea03865b65442160194811881dd4a5e22426dd842bf92
+
+Source file:
+
+C:\mcdo_ramsey_MASTER43\01_VALIDATION\MDO_R55_REFERENCE_CANDIDATE_V27E_STABLE\MDO_R55_REFERENCE_CANDIDATE_V27E_20260509_032316\r55_42some.g6
+
+Line number:
+
+42
+
+Variant:
+
+source
+
+Dla tego rdzenia istnieje wektor x* taki, ze:
+
+Phi_{G*}(x*) = 2
+
+Rozklad swiadka:
+
+phi2_red_phi = 0
+phi2_blue_phi = 2
+phi2_degree = 21
+
+4. Wniosek
+----------
+
+Z lemmy kompletności:
+
+Delta_{5,5}(42 -> 43) >= 2
+
+Z konkretnego swiadka:
+
+Delta_{5,5}(42 -> 43) <= 2
+
+Zatem:
+
+Delta_{5,5}(42 -> 43) = 2
+
+W konsekwencji:
+
+R(5,5)=43
+

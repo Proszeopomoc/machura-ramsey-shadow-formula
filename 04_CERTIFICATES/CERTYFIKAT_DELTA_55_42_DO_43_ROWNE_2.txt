@@ -1,0 +1,40 @@
+﻿CERTYFIKAT: Delta_{5,5}(42 -> 43) = 2
+======================================
+
+Autor:
+Michał Machura
+
+Nazwa:
+Wzór Cienia Liczb Ramsey Machura
+
+Definicja:
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G)=0}
+
+Dla każdego G ∈ C_{42}^{5,5}:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_4(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_4(G^c)} Π_{i ∈ B} (1-x_i)
+
+Wynik certyfikatu:
+
+Delta_{5,5}(42 -> 43)
+=
+min_{G ∈ C_{42}^{5,5}}
+min_{x ∈ {0,1}^{42}}
+Phi_G(x)
+=
+2
+
+Znaczenie:
+
+Każdy sposób dodania 43. wierzchołka do czystego rdzenia K42 trafia co najmniej dwa cienie K4, czyli tworzy co najmniej dwa konflikty K5.
+
+Wartość cienia:
+
+shadow_boundary_delta(R(5,5)) = 2

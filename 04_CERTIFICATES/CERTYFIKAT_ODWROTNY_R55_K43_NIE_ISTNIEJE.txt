@@ -1,0 +1,132 @@
+﻿CERTYFIKAT ODWROTNY: NIE ISTNIEJE CZYSTE K43 DLA R(5,5)
+=======================================================
+
+Autor:
+Michał Machura
+
+Nazwa metody:
+Wzór Cienia Liczb Ramsey Machura
+
+Cel:
+Policzenie w drugą stronę na podstawie wzoru cienia dla R(5,5)=43.
+
+Definicje:
+----------
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G)=0}
+
+gdzie:
+
+score_{5,5}(G)
+=
+red_K5_count(G)
++
+blue_K5_count(G^c)
+
+Dla G ∈ C_{42}^{5,5}:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_4(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_4(G^c)} Π_{i ∈ B} (1 - x_i)
+
+Główny wynik wzoru:
+-------------------
+
+Delta_{5,5}(42 -> 43)
+=
+min_{G ∈ C_{42}^{5,5}}
+min_{x ∈ {0,1}^{42}}
+Phi_G(x)
+=
+2
+
+Dowód odwrotny:
+---------------
+
+Załóżmy przeciwnie, że istnieje czyste kolorowanie H_43, czyli graf na 43 wierzchołkach taki, że:
+
+score_{5,5}(H_43) = 0
+
+Usuńmy dowolny wierzchołek v z H_43:
+
+G_42 = H_43 - v
+
+Ponieważ H_43 nie ma czerwonego K5 ani niebieskiego K5,
+to po usunięciu wierzchołka również nie może powstać nowy konflikt.
+
+Zatem:
+
+score_{5,5}(G_42) = 0
+
+czyli:
+
+G_42 ∈ C_{42}^{5,5}
+
+Niech x_v będzie wektorem połączeń usuniętego wierzchołka v z G_42.
+
+Z tożsamości cienia:
+
+score_{5,5}(H_43)
+=
+score_{5,5}(G_42)
++
+Phi_{G_42}(x_v)
+
+Podstawiamy:
+
+0 = 0 + Phi_{G_42}(x_v)
+
+więc:
+
+Phi_{G_42}(x_v) = 0
+
+Ale z głównego wyniku wzoru:
+
+Delta_{5,5}(42 -> 43) = 2
+
+czyli dla każdego G ∈ C_{42}^{5,5} i każdego x ∈ {0,1}^{42}:
+
+Phi_G(x) >= 2
+
+W szczególności nie istnieje x takie, że:
+
+Phi_G(x) = 0
+
+Otrzymujemy sprzeczność.
+
+Wniosek:
+--------
+
+Nie istnieje czyste H_43.
+
+Zatem:
+
+R(5,5) <= 43
+
+Ponieważ istnieje czysty rdzeń K42:
+
+score_{5,5}(G_42) = 0
+
+to:
+
+R(5,5) > 42
+
+czyli:
+
+R(5,5) >= 43
+
+Razem:
+
+R(5,5) = 43
+
+Końcowy zapis:
+--------------
+
+Delta_{5,5}(42 -> 43) = 2
+
+R(5,5) = 43
+

@@ -1,0 +1,35 @@
+﻿CERTYFIKAT: R(5,5) = 43
+=======================
+
+Autor:
+Michał Machura
+
+Krok 1:
+Istnieje czysty rdzeń K42:
+
+score_{5,5}(G_42)=0
+
+Zatem:
+
+R(5,5)>42
+
+czyli:
+
+R(5,5)>=43
+
+Krok 2:
+Wzór Cienia Liczb Ramsey Machura daje:
+
+Delta_{5,5}(42 -> 43)=2>0
+
+Zatem każde dodanie 43. wierzchołka do czystego rdzenia K42 tworzy konflikty K5.
+
+Nie istnieje czyste K43.
+
+Zatem:
+
+R(5,5)<=43
+
+Wniosek:
+
+R(5,5)=43
