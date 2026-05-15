@@ -1,0 +1,45 @@
+MACHURA SHADOW REVERSAL VALIDATION V01 SAMPLE3
+==============================================
+
+Run:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_REVERSAL_V01_SAMPLE3_20260514_001657
+
+Purpose:
+Local logical validation of the shadow increment identity and reversal lemma.
+
+This run does not enumerate Delta.
+This run validates the definitions on real clean Ramsey cores.
+
+Result:
+total_records = 3
+clean_h_records = 3
+reverse_lemma_ok_for_clean_h_records = 3
+status = DONE
+
+Interpretation:
+For every tested clean H, deleting vertices produced clean cores G,
+and the reconstructed connection map chi gave empty shadow Phi_G(chi)=0.
+
+Validated identity:
+Conf(G + chi) = Conf(G) union Phi_G(chi)
+
+Validated reversal:
+clean H exists
+if and only if
+there exists a clean core G with empty shadow Phi_G(chi).
+
+Boundary note:
+The tested H records are K42 records, so this validates the logical mechanism
+on deletion K42 -> K41. It is not the full R(5,5) boundary audit.
+
+Full Delta evidence remains:
+R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607
+
+Full audit result:
+Phi=0 excluded for 674/674 records.
+Phi=1 excluded for 674/674 records.
+A Phi=2 witness exists.
+
+Conclusion:
+V01_SAMPLE3 supports the formal shadow-reversal lemma.
+The full Delta=2 claim is supported by the separate 674/674 audit.

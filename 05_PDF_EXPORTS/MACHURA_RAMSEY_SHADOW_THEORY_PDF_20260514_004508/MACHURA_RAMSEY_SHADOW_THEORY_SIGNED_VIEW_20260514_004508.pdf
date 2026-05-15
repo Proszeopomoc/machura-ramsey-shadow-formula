@@ -1,0 +1,2296 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R] /Count 18 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2527 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(MACHURA RAMSEY SHADOW THEORY - UNIFIED SIGNED VIEW) Tj
+T*
+(==================================================) Tj
+T*
+() Tj
+T*
+(Author: Michal Machura) Tj
+T*
+(Generated UTC: 2026-05-13T22:45:10.403797+00:00) Tj
+T*
+(Project root: C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura) Tj
+T*
+() Tj
+T*
+(Scope:) Tj
+T*
+(This document collects the current theory layer of the Machura Ramsey Shadow Formula.) Tj
+T*
+(It uses standard Ramsey terminology and separates theory from numerical audit evidence.) Tj
+T*
+() Tj
+T*
+(Included source files:) Tj
+T*
+(----------------------) Tj
+T*
+(8ae4fd0580647c6581571642c6a545d29382e21af2b9b9fbb84535fd708a70d4  ) Tj
+T*
+(00_FORMULA\\04_shadow_reversal_lemma.md) Tj
+T*
+(8e298c39e2f86c8a4a1846ae56e016e5406d0a63c81bfc7abffdce918fac46b8  ) Tj
+T*
+(00_FORMULA\\V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS_20260514_003302.txt) Tj
+T*
+(d5389c99000c09ce1a1954d84dfadd8f977570ef8d6743441542603a6be1e032  ) Tj
+T*
+(00_FORMULA\\V05_MACHURA_SHADOW_THEOREM_MAP_20260514_004258.txt) Tj
+T*
+(cd27e84c13107bec6c86b78d8238ec73cdd251c58f5a81869b6995761d7e1610  ) Tj
+T*
+(00_FORMULA\\WZOR_CIENIA_LICZB_RAMSEY_MACHURA_FULL.txt) Tj
+T*
+(e34dbe939f013e9c87ec7f8a11af8f4d383a49a9e4d28a61981dfb8dcd854fcd  ) Tj
+T*
+(03_EVIDENCE\\EVIDENCE_INDEX.txt) Tj
+T*
+(9b0f9ad29636d2f73e2a89ca49486b3fd20520c9b503a591ba516796b7646a8c  ) Tj
+T*
+(03_EVIDENCE\\V01_SAMPLE3_REVERSAL_VALIDATION_SUMMARY_20260514_002128.txt) Tj
+T*
+(98c9a33da24f44a57690db3821ad0b8fbfc0fbd33d2be95d625997c82b04a311  ) Tj
+T*
+(03_EVIDENCE\\V03_SHADOW_DIFFERENCE_VALIDATION_SAMPLE3_20260514_002943.txt) Tj
+T*
+() Tj
+T*
+(DOCUMENT BODY) Tj
+T*
+(=============) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 00_FORMULA\\04_shadow_reversal_lemma.md) Tj
+T*
+(SHA256: 8ae4fd0580647c6581571642c6a545d29382e21af2b9b9fbb84535fd708a70d4) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+(LEMAT ODWROCENIA CIENIA) Tj
+T*
+(=======================) Tj
+T*
+() Tj
+T*
+(Autor: Michal Machura) Tj
+T*
+() Tj
+T*
+(Niech C_n^{a,b} oznacza zbior czystych rdzeni Ramseyowskich.) Tj
+T*
+() Tj
+T*
+(Niech chi : V\(G\) -> {red, blue} oznacza sposob polaczenia nowego) Tj
+T*
+(wierzcholka z rdzeniem G.) Tj
+T*
+() Tj
+T*
+(Niech G + chi oznacza graf po dodaniu nowego wierzcholka.) Tj
+T*
+() Tj
+T*
+(Definiujemy:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\)) Tj
+T*
+(=) Tj
+T*
+(RedK_a\(G\) union BlueK_b\(G^c\)) Tj
+T*
+() Tj
+T*
+(oraz:) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\)) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1469 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(=) Tj
+T*
+(zbior nowych konfliktow powstalych z udzialem dodanego wierzcholka.) Tj
+T*
+() Tj
+T*
+(Wzor przyrostu:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Conf_{a,b}\(G\) union Phi_{a,b,G}\(chi\)) Tj
+T*
+() Tj
+T*
+(Dla czystego rdzenia:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\) = empty) Tj
+T*
+() Tj
+T*
+(zatem:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G + chi\) = Phi_{a,b,G}\(chi\)) Tj
+T*
+() Tj
+T*
+(Lemat odwrocenia:) Tj
+T*
+() Tj
+T*
+(C_{succ\(n\)}^{a,b} != empty) Tj
+T*
+() Tj
+T*
+(wtedy i tylko wtedy, gdy istnieje G in C_n^{a,b}) Tj
+T*
+(oraz istnieje chi : V\(G\) -> {red, blue}) Tj
+T*
+(takie, ze:) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(Dowod w przod:) Tj
+T*
+() Tj
+T*
+(Jesli istnieje para \(G, chi\) z pustym cieniem, to:) Tj
+T*
+() Tj
+T*
+(Conf\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Conf\(G\) union Phi_G\(chi\)) Tj
+T*
+(=) Tj
+T*
+(empty union empty) Tj
+T*
+(=) Tj
+T*
+(empty) Tj
+T*
+() Tj
+T*
+(czyli G + chi jest czysty.) Tj
+T*
+() Tj
+T*
+(Dowod w tyl:) Tj
+T*
+() Tj
+T*
+(Jesli istnieje czysty graf H na succ\(n\) wierzcholkach,) Tj
+T*
+(to po usunieciu dowolnego wierzcholka v dostajemy czysty rdzen:) Tj
+T*
+() Tj
+T*
+(G = H - v) Tj
+T*
+() Tj
+T*
+(Kolory krawedzi z v do G definiuja chi.) Tj
+T*
+() Tj
+T*
+(Poniewaz H byl czysty, dodany wierzcholek nie tworzy zadnego konfliktu,) Tj
+T*
+(wiec:) Tj
+T*
+() Tj
+T*
+(Phi_G\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(Wniosek:) Tj
+T*
+() Tj
+T*
+(Szukanie czystego grafu na succ\(n\) jest rownowazne szukaniu) Tj
+T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1905 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(pustego cienia nad czystym rdzeniem na n.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 00_FORMULA\\V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS_20260514_003302.txt) Tj
+T*
+(SHA256: 8e298c39e2f86c8a4a1846ae56e016e5406d0a63c81bfc7abffdce918fac46b8) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+(MACHURA RAMSEY SHADOW THEORY) Tj
+T*
+(V04 THEORETICAL CLOSURE WITHOUT NUMERICAL PARAMETERS) Tj
+T*
+(====================================================) Tj
+T*
+() Tj
+T*
+(Author:) Tj
+T*
+(Michal Machura) Tj
+T*
+() Tj
+T*
+(Scope:) Tj
+T*
+(This document formulates the Machura Ramsey Shadow theory without using) Tj
+T*
+(the numerical R\(5,5\) boundary values.) Tj
+T*
+() Tj
+T*
+(The purpose is to express the theory as a general Ramsey-theoretic) Tj
+T*
+(one-vertex extension and deletion calculus.) Tj
+T*
+() Tj
+T*
+(No numerical Delta value is used in this document.) Tj
+T*
+(No enumeration result is used in this document.) Tj
+T*
+(No solver-specific mechanism is used in this document.) Tj
+T*
+() Tj
+T*
+(1. Standard Ramsey setting) Tj
+T*
+(==========================) Tj
+T*
+() Tj
+T*
+(Let R\(a,b\) denote the classical Ramsey number.) Tj
+T*
+() Tj
+T*
+(A graph G is called an \(a,b\)-clean graph if:) Tj
+T*
+() Tj
+T*
+(G contains no red K_a,) Tj
+T*
+() Tj
+T*
+(and the complement graph G^c contains no blue K_b.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\) = empty,) Tj
+T*
+() Tj
+T*
+(where:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\)) Tj
+T*
+(=) Tj
+T*
+(RedK_a\(G\) union BlueK_b\(G^c\).) Tj
+T*
+() Tj
+T*
+(Let:) Tj
+T*
+() Tj
+T*
+(C_n^{a,b}) Tj
+T*
+(=) Tj
+T*
+({G : |V\(G\)| = n and Conf_{a,b}\(G\) = empty}.) Tj
+T*
+() Tj
+T*
+(Thus C_n^{a,b} is the layer of clean Ramsey cores on n vertices.) Tj
+T*
+() Tj
+T*
+(2. One-vertex extension) Tj
+T*
+(=======================) Tj
+T*
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1629 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(Let G be a graph on vertex set V.) Tj
+T*
+() Tj
+T*
+(Let chi be a connection map from a new vertex to the old core:) Tj
+T*
+() Tj
+T*
+(chi : V\(G\) -> {red, blue}.) Tj
+T*
+() Tj
+T*
+(The extended graph is denoted:) Tj
+T*
+() Tj
+T*
+(G + chi.) Tj
+T*
+() Tj
+T*
+(The shadow Phi_{a,b,G}\(chi\) is defined as the set of all new forbidden) Tj
+T*
+(Ramsey conflicts created with the participation of the added vertex.) Tj
+T*
+() Tj
+T*
+(Thus Phi contains exactly those forbidden structures which did not exist) Tj
+T*
+(inside G alone and which become complete after adding the new vertex.) Tj
+T*
+() Tj
+T*
+(3. Forward shadow identity) Tj
+T*
+(==========================) Tj
+T*
+() Tj
+T*
+(For every graph G and every connection map chi:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Conf_{a,b}\(G\) union Phi_{a,b,G}\(chi\).) Tj
+T*
+() Tj
+T*
+(In score form:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(G\) + |Phi_{a,b,G}\(chi\)|.) Tj
+T*
+() Tj
+T*
+(If G is clean, then:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\) = empty,) Tj
+T*
+() Tj
+T*
+(so:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Phi_{a,b,G}\(chi\).) Tj
+T*
+() Tj
+T*
+(Therefore, for a clean core, the whole obstruction to a clean extension) Tj
+T*
+(is exactly the shadow.) Tj
+T*
+() Tj
+T*
+(4. Reverse shadow identity) Tj
+T*
+(==========================) Tj
+T*
+() Tj
+T*
+(Let H be a graph and let v be a vertex of H.) Tj
+T*
+() Tj
+T*
+(Define:) Tj
+T*
+() Tj
+T*
+(G_v = H - v.) Tj
+T*
+() Tj
+T*
+(Let chi_v be the connection map induced by the deleted vertex v:) Tj
+T*
+() Tj
+T*
+(chi_v : V\(G_v\) -> {red, blue}.) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 1653 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(Then:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(H\)) Tj
+T*
+(=) Tj
+T*
+(Conf_{a,b}\(H - v\) union Phi_{a,b,H-v}\(chi_v\).) Tj
+T*
+() Tj
+T*
+(In score form:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(H\)) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(H - v\) + |Phi_{a,b,H-v}\(chi_v\)|.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(|Phi_{a,b,H-v}\(chi_v\)|) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(H\) - score_{a,b}\(H - v\).) Tj
+T*
+() Tj
+T*
+(Interpretation:) Tj
+T*
+() Tj
+T*
+(The shadow of a deleted vertex is exactly the part of the Ramsey conflict) Tj
+T*
+(score that disappears when the vertex is removed.) Tj
+T*
+() Tj
+T*
+(5. Vertex-sum identity) Tj
+T*
+(======================) Tj
+T*
+() Tj
+T*
+(Summing the reverse shadow over all vertices of H gives:) Tj
+T*
+() Tj
+T*
+(sum_{v in V\(H\)} |Phi_v\(H\)|) Tj
+T*
+(=) Tj
+T*
+(a * |RedK_a\(H\)| + b * |BlueK_b\(H^c\)|.) Tj
+T*
+() Tj
+T*
+(Reason:) Tj
+T*
+() Tj
+T*
+(Every red K_a has exactly a vertices, so it is counted once for each) Tj
+T*
+(of its vertices.) Tj
+T*
+() Tj
+T*
+(Every blue K_b has exactly b vertices, so it is counted once for each) Tj
+T*
+(of its vertices.) Tj
+T*
+() Tj
+T*
+(This gives a global consistency check for the shadow calculus.) Tj
+T*
+() Tj
+T*
+(6. Shadow reversal lemma) Tj
+T*
+(========================) Tj
+T*
+() Tj
+T*
+(The following statements are equivalent:) Tj
+T*
+() Tj
+T*
+(A. There exists a clean graph H on succ\(n\) vertices.) Tj
+T*
+() Tj
+T*
+(B. There exists a clean core G in C_n^{a,b} and a connection map chi) Tj
+T*
+(   such that:) Tj
+T*
+() Tj
+T*
+(   Phi_{a,b,G}\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(Proof from B to A:) Tj
+T*
+() Tj
+T*
+(If G is clean and Phi_{a,b,G}\(chi\) is empty, then:) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 1422 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(Conf\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Conf\(G\) union Phi_G\(chi\)) Tj
+T*
+(=) Tj
+T*
+(empty union empty) Tj
+T*
+(=) Tj
+T*
+(empty.) Tj
+T*
+() Tj
+T*
+(Therefore G + chi is clean.) Tj
+T*
+() Tj
+T*
+(Proof from A to B:) Tj
+T*
+() Tj
+T*
+(If H is clean on succ\(n\) vertices, delete any vertex v.) Tj
+T*
+() Tj
+T*
+(Then:) Tj
+T*
+() Tj
+T*
+(G_v = H - v) Tj
+T*
+() Tj
+T*
+(is clean, because deleting a vertex cannot create a forbidden clique) Tj
+T*
+(or independent set.) Tj
+T*
+() Tj
+T*
+(The deleted vertex induces a connection map chi_v.) Tj
+T*
+() Tj
+T*
+(Since H is clean, the deleted vertex participates in no forbidden) Tj
+T*
+(Ramsey conflict.) Tj
+T*
+() Tj
+T*
+(Therefore:) Tj
+T*
+() Tj
+T*
+(Phi_{G_v}\(chi_v\) = empty.) Tj
+T*
+() Tj
+T*
+(Thus a clean larger graph exists if and only if a clean core with empty) Tj
+T*
+(shadow exists.) Tj
+T*
+() Tj
+T*
+(7. Shadow closure theorem) Tj
+T*
+(=========================) Tj
+T*
+() Tj
+T*
+(If:) Tj
+T*
+() Tj
+T*
+(C_n^{a,b} is not empty,) Tj
+T*
+() Tj
+T*
+(and:) Tj
+T*
+() Tj
+T*
+(for every G in C_n^{a,b}) Tj
+T*
+(and every connection map chi : V\(G\) -> {red, blue},) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) is not empty,) Tj
+T*
+() Tj
+T*
+(then:) Tj
+T*
+() Tj
+T*
+(C_{succ\(n\)}^{a,b} is empty.) Tj
+T*
+() Tj
+T*
+(Therefore:) Tj
+T*
+() Tj
+T*
+(R\(a,b\) = succ\(n\).) Tj
+T*
+() Tj
+T*
+(This is the theoretical form of the Machura Shadow Closure.) Tj
+T*
+() Tj
+T*
+(8. Falsification criterion) Tj
+T*
+ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 1734 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(==========================) Tj
+T*
+() Tj
+T*
+(To refute shadow closure at a given layer, it is enough to find one pair:) Tj
+T*
+() Tj
+T*
+(\(G, chi\)) Tj
+T*
+() Tj
+T*
+(such that:) Tj
+T*
+() Tj
+T*
+(G in C_n^{a,b},) Tj
+T*
+() Tj
+T*
+(and:) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(Such a pair immediately constructs a clean graph:) Tj
+T*
+() Tj
+T*
+(H = G + chi) Tj
+T*
+() Tj
+T*
+(on succ\(n\) vertices.) Tj
+T*
+() Tj
+T*
+(Thus the entire closure claim is falsified by one empty shadow.) Tj
+T*
+() Tj
+T*
+(9. Quantitative Delta layer) Tj
+T*
+(===========================) Tj
+T*
+() Tj
+T*
+(The qualitative theory requires only:) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) is not empty.) Tj
+T*
+() Tj
+T*
+(The quantitative version defines:) Tj
+T*
+() Tj
+T*
+(Delta_{a,b}\(n -> succ\(n\)\)) Tj
+T*
+(=) Tj
+T*
+(min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}\(chi\)|.) Tj
+T*
+() Tj
+T*
+(Then:) Tj
+T*
+() Tj
+T*
+(Delta_{a,b}\(n -> succ\(n\)\) > 0) Tj
+T*
+() Tj
+T*
+(is equivalent to shadow closure at that layer.) Tj
+T*
+() Tj
+T*
+(A concrete numerical value of Delta belongs to the evidence and audit) Tj
+T*
+(layer, not to the abstract theory in this document.) Tj
+T*
+() Tj
+T*
+(10. Relation to validated tests) Tj
+T*
+(===============================) Tj
+T*
+() Tj
+T*
+(The forward and reverse identities were locally validated on real clean) Tj
+T*
+(Ramsey cores by the following tests:) Tj
+T*
+() Tj
+T*
+(V01:) Tj
+T*
+(Shadow reversal validation.) Tj
+T*
+(Clean H gives clean deleted cores and empty reconstructed shadow.) Tj
+T*
+() Tj
+T*
+(V03:) Tj
+T*
+(Shadow difference validation.) Tj
+T*
+(The deleted-vertex shadow equals score\(H\) - score\(H-v\), including) Tj
+T*
+(separate red and blue components and the vertex-sum identity.) Tj
+T*
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 1875 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(These tests validate the internal consistency of the shadow calculus.) Tj
+T*
+(They do not replace a full layer enumeration.) Tj
+T*
+() Tj
+T*
+(11. Core sentence) Tj
+T*
+(=================) Tj
+T*
+() Tj
+T*
+(A clean graph one vertex larger exists exactly when a clean core has an) Tj
+T*
+(empty shadow.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(No empty shadow over the clean core layer means Ramsey closure at the) Tj
+T*
+(next vertex.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 00_FORMULA\\V05_MACHURA_SHADOW_THEOREM_MAP_20260514_004258.txt) Tj
+T*
+(SHA256: d5389c99000c09ce1a1954d84dfadd8f977570ef8d6743441542603a6be1e032) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+(MACHURA RAMSEY SHADOW THEOREM MAP) Tj
+T*
+(V05 ONE VIEW) Tj
+T*
+(=================================) Tj
+T*
+() Tj
+T*
+(Author:) Tj
+T*
+(Michal Machura) Tj
+T*
+() Tj
+T*
+(Purpose:) Tj
+T*
+(One-view formal map of the Machura Ramsey Shadow theory using standard) Tj
+T*
+(Ramsey-theoretic terminology.) Tj
+T*
+() Tj
+T*
+(This file is theoretical.) Tj
+T*
+(It does not contain a numerical proof.) Tj
+T*
+(It does not enumerate graphs.) Tj
+T*
+(It does not expose solver internals.) Tj
+T*
+() Tj
+T*
+(1. Standard Ramsey objects) Tj
+T*
+(==========================) Tj
+T*
+() Tj
+T*
+(Ramsey number:) Tj
+T*
+() Tj
+T*
+(R\(a,b\)) Tj
+T*
+() Tj
+T*
+(is the smallest integer N such that every graph on N vertices contains) Tj
+T*
+(a clique K_a or an independent set of size b.) Tj
+T*
+() Tj
+T*
+(Equivalently, in two-color edge language:) Tj
+T*
+() Tj
+T*
+(every red-blue coloring of K_N contains a red K_a or a blue K_b.) Tj
+T*
+() Tj
+T*
+(Clean graph:) Tj
+T*
+() Tj
+T*
+(A graph G is called \(a,b\)-clean if:) Tj
+T*
+() Tj
+T*
+(G contains no clique K_a,) Tj
+T*
+() Tj
+T*
+(and:) Tj
+T*
+ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 1391 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(G^c contains no clique K_b.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(G has no red K_a and no blue K_b.) Tj
+T*
+() Tj
+T*
+(Clean layer:) Tj
+T*
+() Tj
+T*
+(C_n^{a,b}) Tj
+T*
+(=) Tj
+T*
+({G : |V\(G\)| = n and G is \(a,b\)-clean}.) Tj
+T*
+() Tj
+T*
+(2. Conflict set) Tj
+T*
+(===============) Tj
+T*
+() Tj
+T*
+(Define the Ramsey conflict set:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\)) Tj
+T*
+(=) Tj
+T*
+(RedK_a\(G\) union BlueK_b\(G^c\).) Tj
+T*
+() Tj
+T*
+(A graph is clean if and only if:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G\) = empty.) Tj
+T*
+() Tj
+T*
+(The score is the size of the conflict set:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G\)) Tj
+T*
+(=) Tj
+T*
+(|Conf_{a,b}\(G\)|.) Tj
+T*
+() Tj
+T*
+(3. One-vertex extension) Tj
+T*
+(=======================) Tj
+T*
+() Tj
+T*
+(Let G be a clean core.) Tj
+T*
+() Tj
+T*
+(Let chi be a connection map from a new vertex to the old vertex set:) Tj
+T*
+() Tj
+T*
+(chi : V\(G\) -> {red, blue}.) Tj
+T*
+() Tj
+T*
+(The extended graph is:) Tj
+T*
+() Tj
+T*
+(G + chi.) Tj
+T*
+() Tj
+T*
+(4. Machura shadow) Tj
+T*
+(=================) Tj
+T*
+() Tj
+T*
+(The shadow Phi_{a,b,G}\(chi\) is the set of all new forbidden Ramsey) Tj
+T*
+(conflicts created by the added vertex.) Tj
+T*
+() Tj
+T*
+(It consists of:) Tj
+T*
+() Tj
+T*
+(red K_a created from red K_{a-1} structures in G,) Tj
+T*
+() Tj
+T*
+(and:) Tj
+T*
+() Tj
+T*
+(blue K_b created from blue K_{b-1} structures in G^c.) Tj
+T*
+ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 1310 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(5. Forward identity) Tj
+T*
+(===================) Tj
+T*
+() Tj
+T*
+(For every graph G and every connection map chi:) Tj
+T*
+() Tj
+T*
+(Conf_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(Conf_{a,b}\(G\) union Phi_{a,b,G}\(chi\).) Tj
+T*
+() Tj
+T*
+(In score form:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(G\) + |Phi_{a,b,G}\(chi\)|.) Tj
+T*
+() Tj
+T*
+(For a clean core G:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G\) = 0,) Tj
+T*
+() Tj
+T*
+(so:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G + chi\)) Tj
+T*
+(=) Tj
+T*
+(|Phi_{a,b,G}\(chi\)|.) Tj
+T*
+() Tj
+T*
+(6. Reverse identity) Tj
+T*
+(===================) Tj
+T*
+() Tj
+T*
+(Let H be a graph and v in V\(H\).) Tj
+T*
+() Tj
+T*
+(Let:) Tj
+T*
+() Tj
+T*
+(G_v = H - v.) Tj
+T*
+() Tj
+T*
+(Let chi_v be the connection map induced by v to G_v.) Tj
+T*
+() Tj
+T*
+(Then:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(H\)) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(H - v\)) Tj
+T*
+(+) Tj
+T*
+(|Phi_{a,b,H-v}\(chi_v\)|.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(|Phi_{a,b,H-v}\(chi_v\)|) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(H\) - score_{a,b}\(H - v\).) Tj
+T*
+() Tj
+T*
+(Interpretation:) Tj
+T*
+() Tj
+T*
+(The shadow of v is exactly the part of the Ramsey conflict score) Tj
+T*
+(that disappears when v is removed.) Tj
+T*
+() Tj
+T*
+(7. Vertex-sum identity) Tj
+T*
+(======================) Tj
+T*
+ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 25 0 R >>
+endobj
+25 0 obj
+<< /Length 1427 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(For every graph H:) Tj
+T*
+() Tj
+T*
+(sum_{v in V\(H\)} |Phi_v\(H\)|) Tj
+T*
+(=) Tj
+T*
+(a * |RedK_a\(H\)|) Tj
+T*
+(+) Tj
+T*
+(b * |BlueK_b\(H^c\)|.) Tj
+T*
+() Tj
+T*
+(This is the global consistency identity of the shadow calculus.) Tj
+T*
+() Tj
+T*
+(8. Reversal equivalence) Tj
+T*
+(=======================) Tj
+T*
+() Tj
+T*
+(The following are equivalent:) Tj
+T*
+() Tj
+T*
+(A. There exists a clean graph H on succ\(n\) vertices.) Tj
+T*
+() Tj
+T*
+(B. There exists a clean core G in C_n^{a,b} and a connection map chi) Tj
+T*
+(   such that:) Tj
+T*
+() Tj
+T*
+(   Phi_{a,b,G}\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(In words:) Tj
+T*
+() Tj
+T*
+(A clean larger graph exists exactly when a clean core has an empty shadow.) Tj
+T*
+() Tj
+T*
+(9. Shadow closure theorem) Tj
+T*
+(=========================) Tj
+T*
+() Tj
+T*
+(If:) Tj
+T*
+() Tj
+T*
+(C_n^{a,b} is not empty,) Tj
+T*
+() Tj
+T*
+(and:) Tj
+T*
+() Tj
+T*
+(for every G in C_n^{a,b}) Tj
+T*
+(and every connection map chi,) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) is not empty,) Tj
+T*
+() Tj
+T*
+(then:) Tj
+T*
+() Tj
+T*
+(C_{succ\(n\)}^{a,b} is empty.) Tj
+T*
+() Tj
+T*
+(Therefore:) Tj
+T*
+() Tj
+T*
+(R\(a,b\) = succ\(n\).) Tj
+T*
+() Tj
+T*
+(10. Falsification criterion) Tj
+T*
+(===========================) Tj
+T*
+() Tj
+T*
+(To refute the closure claim at a layer, it is enough to find one pair:) Tj
+T*
+() Tj
+T*
+(G in C_n^{a,b},) Tj
+T*
+() Tj
+T*
+(chi : V\(G\) -> {red, blue},) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 27 0 R >>
+endobj
+27 0 obj
+<< /Length 1734 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(such that:) Tj
+T*
+() Tj
+T*
+(Phi_{a,b,G}\(chi\) = empty.) Tj
+T*
+() Tj
+T*
+(This constructs a clean graph:) Tj
+T*
+() Tj
+T*
+(H = G + chi) Tj
+T*
+() Tj
+T*
+(on succ\(n\) vertices.) Tj
+T*
+() Tj
+T*
+(11. Quantitative Delta layer) Tj
+T*
+(============================) Tj
+T*
+() Tj
+T*
+(Define:) Tj
+T*
+() Tj
+T*
+(Delta_{a,b}\(n -> succ\(n\)\)) Tj
+T*
+(=) Tj
+T*
+(min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}\(chi\)|.) Tj
+T*
+() Tj
+T*
+(Then:) Tj
+T*
+() Tj
+T*
+(Delta_{a,b}\(n -> succ\(n\)\) > 0) Tj
+T*
+() Tj
+T*
+(is equivalent to shadow closure at the layer.) Tj
+T*
+() Tj
+T*
+(A concrete value of Delta is evidence-level data.) Tj
+T*
+(The abstract theory requires only positivity.) Tj
+T*
+() Tj
+T*
+(12. Named structure) Tj
+T*
+(===================) Tj
+T*
+() Tj
+T*
+(The theory consists of four named components:) Tj
+T*
+() Tj
+T*
+(1. Machura Shadow Phi) Tj
+T*
+(2. Forward Shadow Identity) Tj
+T*
+(3. Reverse Shadow Difference Identity) Tj
+T*
+(4. Shadow Closure Theorem) Tj
+T*
+() Tj
+T*
+(Together they define a one-vertex Ramsey shadow calculus.) Tj
+T*
+() Tj
+T*
+(13. Core sentence) Tj
+T*
+(=================) Tj
+T*
+() Tj
+T*
+(No empty shadow over the clean core layer means Ramsey closure at the) Tj
+T*
+(next vertex.) Tj
+T*
+() Tj
+T*
+(Equivalently:) Tj
+T*
+() Tj
+T*
+(C_{succ\(n\)}^{a,b} = empty) Tj
+T*
+(if and only if) Tj
+T*
+(every clean core G in C_n^{a,b} has no empty extension shadow.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 00_FORMULA\\WZOR_CIENIA_LICZB_RAMSEY_MACHURA_FULL.txt) Tj
+T*
+(SHA256: cd27e84c13107bec6c86b78d8238ec73cdd251c58f5a81869b6995761d7e1610) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 29 0 R >>
+endobj
+29 0 obj
+<< /Length 1586 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(WZOR CIENIA LICZB RAMSEY MACHURA) Tj
+T*
+(================================) Tj
+T*
+() Tj
+T*
+(Autor:) Tj
+T*
+(Micha Machura) Tj
+T*
+() Tj
+T*
+(Status:) Tj
+T*
+(Nowy wynik matematyczny i obliczeniowy dla liczb Ramseya.) Tj
+T*
+() Tj
+T*
+(Rola MCDO:) Tj
+T*
+(MCDO nie jest nazwa wzoru, twierdzenia ani tabeli.) Tj
+T*
+(MCDO byo uzyte tylko jako pomocniczy silnik obliczeniowy do sprawnego liczenia grafow, ) Tj
+T*
+(cieni, walidacji i hashy SHA256.) Tj
+T*
+() Tj
+T*
+(GOWNA DEFINICJA) Tj
+T*
+(================) Tj
+T*
+() Tj
+T*
+(Dla przypadku Ramseya R\(a,b\):) Tj
+T*
+() Tj
+T*
+(critical_n = R\(a,b\) - 1) Tj
+T*
+(boundary_n = R\(a,b\)) Tj
+T*
+() Tj
+T*
+(Niech:) Tj
+T*
+() Tj
+T*
+(G = graf czerwony na critical_n wierzchokach) Tj
+T*
+(G^c = complement\(G\), czyli graf niebieski) Tj
+T*
+() Tj
+T*
+(Score grafu:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G\)) Tj
+T*
+(=) Tj
+T*
+(liczba czerwonych K_a w G) Tj
+T*
+(+) Tj
+T*
+(liczba niebieskich K_b w G^c) Tj
+T*
+() Tj
+T*
+(Czysty rdzen krytyczny:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G_critical\) = 0) Tj
+T*
+() Tj
+T*
+(Dodanie nowego wierzchoka opisuje wektor:) Tj
+T*
+() Tj
+T*
+(x = \(x_1, x_2, ..., x_n\)) Tj
+T*
+() Tj
+T*
+(gdzie:) Tj
+T*
+() Tj
+T*
+(x_i = 1  oznacza, ze nowy wierzchoek aczy sie czerwono z i) Tj
+T*
+(x_i = 0  oznacza, ze nowy wierzchoek aczy sie niebiesko z i) Tj
+T*
+() Tj
+T*
+(Rodziny cieni:) Tj
+T*
+() Tj
+T*
+(R_{a-1}\(G\) = zbior czerwonych klik K\(a-1\) w G) Tj
+T*
+(B_{b-1}\(G^c\) = zbior niebieskich klik K\(b-1\) w G^c) Tj
+T*
+() Tj
+T*
+(Wzor cienia:) Tj
+T*
+() Tj
+T*
+(Phi_G\(x\)) Tj
+T*
+(=) Tj
+T*
+(_{A  in  R_{a-1}\(G\)} _{i  in  A} x_i) Tj
+T*
+ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 31 0 R >>
+endobj
+31 0 obj
+<< /Length 1343 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(+) Tj
+T*
+(_{B  in  B_{b-1}\(G^c\)} _{i  in  B} \(1 - x_i\)) Tj
+T*
+() Tj
+T*
+(Tozsamosc graniczna:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(H\)) Tj
+T*
+(=) Tj
+T*
+(score_{a,b}\(G\)) Tj
+T*
+(+) Tj
+T*
+(Phi_G\(x\)) Tj
+T*
+() Tj
+T*
+(Jezeli G jest czystym rdzeniem krytycznym, czyli:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(G\) = 0) Tj
+T*
+() Tj
+T*
+(to:) Tj
+T*
+() Tj
+T*
+(score_{a,b}\(H\) = Phi_G\(x\)) Tj
+T*
+() Tj
+T*
+(Gowna liczba cienia:) Tj
+T*
+() Tj
+T*
+(shadow_boundary_delta\(R\(a,b\)\)) Tj
+T*
+(=) Tj
+T*
+(min_x Phi_Gcritical\(x\)) Tj
+T*
+() Tj
+T*
+(Dla caej warstwy granicznej:) Tj
+T*
+() Tj
+T*
+(Delta_{a,b}\(critical_n -> boundary_n\)) Tj
+T*
+(=) Tj
+T*
+(min_{G  in  C_{critical_n}^{a,b}}) Tj
+T*
+(min_{x  in  {0,1}^{critical_n}}) Tj
+T*
+(Phi_G\(x\)) Tj
+T*
+() Tj
+T*
+(gdzie:) Tj
+T*
+() Tj
+T*
+(C_{critical_n}^{a,b}) Tj
+T*
+(=) Tj
+T*
+({G : |V\(G\)| = critical_n, score_{a,b}\(G\) = 0}) Tj
+T*
+() Tj
+T*
+(ZASTOSOWANIE DO R\(5,5\)) Tj
+T*
+(======================) Tj
+T*
+() Tj
+T*
+(Dla R\(5,5\):) Tj
+T*
+() Tj
+T*
+(critical_n = 42) Tj
+T*
+(boundary_n = 43) Tj
+T*
+() Tj
+T*
+(C_{42}^{5,5}) Tj
+T*
+(=) Tj
+T*
+({G : |V\(G\)| = 42, score_{5,5}\(G\) = 0}) Tj
+T*
+() Tj
+T*
+(czyli zbior wszystkich czystych rdzeni krytycznych K42 bez czerwonego K5 i bez niebieskiego ) Tj
+T*
+(K5.) Tj
+T*
+() Tj
+T*
+(Dla kazdego takiego rdzenia:) Tj
+T*
+() Tj
+T*
+(Phi_G\(x\)) Tj
+T*
+(=) Tj
+T*
+ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 33 0 R >>
+endobj
+33 0 obj
+<< /Length 1532 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(_{A  in  R_4\(G\)} _{i  in  A} x_i) Tj
+T*
+(+) Tj
+T*
+(_{B  in  B_4\(G^c\)} _{i  in  B} \(1 - x_i\)) Tj
+T*
+() Tj
+T*
+(Gowny wynik:) Tj
+T*
+() Tj
+T*
+(Delta_{5,5}\(42 -> 43\)) Tj
+T*
+(=) Tj
+T*
+(min_{G  in  C_{42}^{5,5}}) Tj
+T*
+(min_{x  in  {0,1}^{42}}) Tj
+T*
+(Phi_G\(x\)) Tj
+T*
+(=) Tj
+T*
+(2) Tj
+T*
+() Tj
+T*
+(Poniewaz:) Tj
+T*
+() Tj
+T*
+(Delta_{5,5}\(42 -> 43\) = 2 > 0) Tj
+T*
+() Tj
+T*
+(kazde dodanie 43. wierzchoka do czystego rdzenia K42 tworzy co najmniej dwa konflikty ) Tj
+T*
+(Ramseyowskie K5.) Tj
+T*
+() Tj
+T*
+(Zatem nie istnieje czyste kolorowanie K43 bez monochromatycznego K5.) Tj
+T*
+() Tj
+T*
+(Czyli:) Tj
+T*
+() Tj
+T*
+(R\(5,5\) <= 43) Tj
+T*
+() Tj
+T*
+(Poniewaz istnieje czysty rdzen K42:) Tj
+T*
+() Tj
+T*
+(score_{5,5}\(G_42\) = 0) Tj
+T*
+() Tj
+T*
+(to:) Tj
+T*
+() Tj
+T*
+(R\(5,5\) > 42) Tj
+T*
+() Tj
+T*
+(czyli:) Tj
+T*
+() Tj
+T*
+(R\(5,5\) >= 43) Tj
+T*
+() Tj
+T*
+(Razem:) Tj
+T*
+() Tj
+T*
+(R\(5,5\) = 43) Tj
+T*
+() Tj
+T*
+(Wartosc cienia:) Tj
+T*
+() Tj
+T*
+(shadow_boundary_delta\(R\(5,5\)\) = 2) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 03_EVIDENCE\\EVIDENCE_INDEX.txt) Tj
+T*
+(SHA256: e34dbe939f013e9c87ec7f8a11af8f4d383a49a9e4d28a61981dfb8dcd854fcd) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+([20260514_002128]) Tj
+T*
+(TYPE: V01_SAMPLE3_REVERSAL_VALIDATION) Tj
+T*
+(FILE: C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura\\03_EVIDENCE\\V01_SAMPLE3_REVERSAL_V) Tj
+T*
+ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 35 0 R >>
+endobj
+35 0 obj
+<< /Length 2680 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(ALIDATION_SUMMARY_20260514_002128.txt) Tj
+T*
+(SHA256: 9B0F9AD29636D2F73E2A89CA49486B3FD20520C9B503A591BA516796B7646A8C) Tj
+T*
+(RUN: ) Tj
+T*
+(C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_REVERSAL_V01_SAMPLE3_20260514_001657) Tj
+T*
+(STATUS: DONE) Tj
+T*
+() Tj
+T*
+([20260514_003302]) Tj
+T*
+(TYPE: V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS) Tj
+T*
+(FILE: C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura\\00_FORMULA\\V04_THEORETICAL_SHADOW_) Tj
+T*
+(CLOSURE_NO_NUMBERS_20260514_003302.txt) Tj
+T*
+(SHA256: 8E298C39E2F86C8A4A1846AE56E016E5406D0A63C81BFC7ABFFDCE918FAC46B8) Tj
+T*
+(STATUS: THEORY_CLOSED_NO_NUMERICAL_PARAMETERS) Tj
+T*
+(NOTES: Forward identity, reverse identity, vertex-sum identity, reversal lemma, shadow ) Tj
+T*
+(closure theorem, falsification criterion.) Tj
+T*
+() Tj
+T*
+([20260514_004258]) Tj
+T*
+(TYPE: V05_MACHURA_SHADOW_THEOREM_MAP_ONE_VIEW) Tj
+T*
+(FILE: C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura\\00_FORMULA\\V05_MACHURA_SHADOW_THEO) Tj
+T*
+(REM_MAP_20260514_004258.txt) Tj
+T*
+(SHA256: D5389C99000C09CE1A1954D84DFADD8F977570EF8D6743441542603A6BE1E032) Tj
+T*
+(STATUS: THEORY_MAP_CREATED) Tj
+T*
+(NOTES: One-view formal map with standard Ramsey terminology, shadow identities, reversal ) Tj
+T*
+(equivalence, closure theorem, falsification criterion, and Delta layer.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 03_EVIDENCE\\V01_SAMPLE3_REVERSAL_VALIDATION_SUMMARY_20260514_002128.txt) Tj
+T*
+(SHA256: 9b0f9ad29636d2f73e2a89ca49486b3fd20520c9b503a591ba516796b7646a8c) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+(MACHURA SHADOW REVERSAL VALIDATION V01 SAMPLE3) Tj
+T*
+(==============================================) Tj
+T*
+() Tj
+T*
+(Run:) Tj
+T*
+(C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_REVERSAL_V01_SAMPLE3_20260514_001657) Tj
+T*
+() Tj
+T*
+(Purpose:) Tj
+T*
+(Local logical validation of the shadow increment identity and reversal lemma.) Tj
+T*
+() Tj
+T*
+(This run does not enumerate Delta.) Tj
+T*
+(This run validates the definitions on real clean Ramsey cores.) Tj
+T*
+() Tj
+T*
+(Result:) Tj
+T*
+(total_records = 3) Tj
+T*
+(clean_h_records = 3) Tj
+T*
+(reverse_lemma_ok_for_clean_h_records = 3) Tj
+T*
+(status = DONE) Tj
+T*
+() Tj
+T*
+(Interpretation:) Tj
+T*
+(For every tested clean H, deleting vertices produced clean cores G,) Tj
+T*
+(and the reconstructed connection map chi gave empty shadow Phi_G\(chi\)=0.) Tj
+T*
+() Tj
+T*
+(Validated identity:) Tj
+T*
+(Conf\(G + chi\) = Conf\(G\) union Phi_G\(chi\)) Tj
+T*
+() Tj
+T*
+(Validated reversal:) Tj
+T*
+(clean H exists) Tj
+T*
+ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 37 0 R >>
+endobj
+37 0 obj
+<< /Length 2258 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+(if and only if) Tj
+T*
+(there exists a clean core G with empty shadow Phi_G\(chi\).) Tj
+T*
+() Tj
+T*
+(Boundary note:) Tj
+T*
+(The tested H records are K42 records, so this validates the logical mechanism) Tj
+T*
+(on deletion K42 -> K41. It is not the full R\(5,5\) boundary audit.) Tj
+T*
+() Tj
+T*
+(Full Delta evidence remains:) Tj
+T*
+(R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607) Tj
+T*
+() Tj
+T*
+(Full audit result:) Tj
+T*
+(Phi=0 excluded for 674/674 records.) Tj
+T*
+(Phi=1 excluded for 674/674 records.) Tj
+T*
+(A Phi=2 witness exists.) Tj
+T*
+() Tj
+T*
+(Conclusion:) Tj
+T*
+(V01_SAMPLE3 supports the formal shadow-reversal lemma.) Tj
+T*
+(The full Delta=2 claim is supported by the separate 674/674 audit.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(======================================================================) Tj
+T*
+(SOURCE FILE: 03_EVIDENCE\\V03_SHADOW_DIFFERENCE_VALIDATION_SAMPLE3_20260514_002943.txt) Tj
+T*
+(SHA256: 98c9a33da24f44a57690db3821ad0b8fbfc0fbd33d2be95d625997c82b04a311) Tj
+T*
+(======================================================================) Tj
+T*
+() Tj
+T*
+(MACHURA SHADOW DIFFERENCE VALIDATION V03 SAMPLE3) Tj
+T*
+(================================================) Tj
+T*
+() Tj
+T*
+(Run:) Tj
+T*
+(C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_DIFFERENCE_V03_SAMPLE3_20260514_00253) Tj
+T*
+(3) Tj
+T*
+() Tj
+T*
+(Purpose:) Tj
+T*
+(Validation of reverse/difference form of the Machura Shadow Formula.) Tj
+T*
+() Tj
+T*
+(This run checks that the shadow of a deleted vertex equals the score difference) Tj
+T*
+(between the full graph H and the vertex-deleted core H-v.) Tj
+T*
+() Tj
+T*
+(Checked identities:) Tj
+T*
+() Tj
+T*
+(1. Total difference:) Tj
+T*
+(Phi_{H-v}\(chi_v\) = score\(H\) - score\(H-v\)) Tj
+T*
+() Tj
+T*
+(2. Red component:) Tj
+T*
+(red_phi_v = red_score\(H\) - red_score\(H-v\)) Tj
+T*
+() Tj
+T*
+(3. Blue component:) Tj
+T*
+(blue_phi_v = blue_score\(H\) - blue_score\(H-v\)) Tj
+T*
+() Tj
+T*
+(4. Vertex-sum identity:) Tj
+T*
+(sum_v |Phi_v\(H\)| = a * RedK_a\(H\) + b * BlueK_b\(H^c\)) Tj
+T*
+() Tj
+T*
+(Result:) Tj
+T*
+(status = PASS_SHADOW_DIFFERENCE_V03) Tj
+T*
+(total_records = 3) Tj
+T*
+(difference_ok_records = 3) Tj
+T*
+(color_difference_ok_records = 3) Tj
+T*
+(handshake_identity_ok_records = 3) Tj
+T*
+ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 39 0 R >>
+endobj
+39 0 obj
+<< /Length 574 >>
+stream
+BT
+/F1 8.5 Tf
+45 800 Td
+11.5 TL
+() Tj
+T*
+(Interpretation:) Tj
+T*
+(The Machura Shadow Formula is validated in reverse form on the tested real clean Ramsey ) Tj
+T*
+(cores.) Tj
+T*
+() Tj
+T*
+(Core theoretical conclusion:) Tj
+T*
+(The shadow of a vertex is exactly the part of the Ramsey conflict score) Tj
+T*
+(that disappears when the vertex is removed.) Tj
+T*
+() Tj
+T*
+(This supports the bidirectional theory:) Tj
+T*
+() Tj
+T*
+(Forward:) Tj
+T*
+(score\(G + chi\) = score\(G\) + Phi_G\(chi\)) Tj
+T*
+() Tj
+T*
+(Reverse:) Tj
+T*
+(Phi_{H-v}\(chi_v\) = score\(H\) - score\(H-v\)) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 40
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000239 00000 n 
+0000000307 00000 n 
+0000000433 00000 n 
+0000003012 00000 n 
+0000003138 00000 n 
+0000004659 00000 n 
+0000004785 00000 n 
+0000006742 00000 n 
+0000006870 00000 n 
+0000008552 00000 n 
+0000008680 00000 n 
+0000010386 00000 n 
+0000010514 00000 n 
+0000011989 00000 n 
+0000012117 00000 n 
+0000013904 00000 n 
+0000014032 00000 n 
+0000015960 00000 n 
+0000016088 00000 n 
+0000017532 00000 n 
+0000017660 00000 n 
+0000019023 00000 n 
+0000019151 00000 n 
+0000020631 00000 n 
+0000020759 00000 n 
+0000022546 00000 n 
+0000022674 00000 n 
+0000024313 00000 n 
+0000024441 00000 n 
+0000025837 00000 n 
+0000025965 00000 n 
+0000027550 00000 n 
+0000027678 00000 n 
+0000030411 00000 n 
+0000030539 00000 n 
+0000032850 00000 n 
+0000032978 00000 n 
+trailer
+<< /Size 40 /Root 1 0 R >>
+startxref
+33604
+%%EOF

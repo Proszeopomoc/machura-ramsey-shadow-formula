@@ -1,0 +1,47 @@
+MACHURA SHADOW DIFFERENCE VALIDATION V03 SAMPLE3
+================================================
+
+Run:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_DIFFERENCE_V03_SAMPLE3_20260514_002533
+
+Purpose:
+Validation of reverse/difference form of the Machura Shadow Formula.
+
+This run checks that the shadow of a deleted vertex equals the score difference
+between the full graph H and the vertex-deleted core H-v.
+
+Checked identities:
+
+1. Total difference:
+Phi_{H-v}(chi_v) = score(H) - score(H-v)
+
+2. Red component:
+red_phi_v = red_score(H) - red_score(H-v)
+
+3. Blue component:
+blue_phi_v = blue_score(H) - blue_score(H-v)
+
+4. Vertex-sum identity:
+sum_v |Phi_v(H)| = a * RedK_a(H) + b * BlueK_b(H^c)
+
+Result:
+status = PASS_SHADOW_DIFFERENCE_V03
+total_records = 3
+difference_ok_records = 3
+color_difference_ok_records = 3
+handshake_identity_ok_records = 3
+
+Interpretation:
+The Machura Shadow Formula is validated in reverse form on the tested real clean Ramsey cores.
+
+Core theoretical conclusion:
+The shadow of a vertex is exactly the part of the Ramsey conflict score
+that disappears when the vertex is removed.
+
+This supports the bidirectional theory:
+
+Forward:
+score(G + chi) = score(G) + Phi_G(chi)
+
+Reverse:
+Phi_{H-v}(chi_v) = score(H) - score(H-v)

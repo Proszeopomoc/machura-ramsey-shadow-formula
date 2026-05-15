@@ -1,0 +1,46 @@
+MACHURA DELTA TABLE V15 - CONFIRMED SMALL CASES
+================================================
+
+Author: Michal Machura
+Created local: 2026-05-14T19:45:24.0186324+02:00
+
+Definition:
+Delta_{a,b}(critical_n -> boundary_n) = min_G min_x Phi_G(x)
+
+Confirmed rows:
+---------------
+
+CASE: R(3,3)
+source_n: 4
+critical_n: 5
+boundary_n: 6
+shadow_boundary_delta: 2
+phi0_source_rows: 12
+reconstructed_clean_graphs: 12
+total_phi0_to_next_layer: 0
+total_phi1_to_next_layer: 0
+total_phi2_to_next_layer: 240
+status: PASS_EXPECTED_PHI0_COUNT
+report_sha256: 3541AB974663350D1A88663BC57A77DDFA388F5F0904D0860BA4AA1A46BA65E8
+report_path: C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_TRANSITION_V12_R33_K5_TO_K6_20260514_193755\REPORT_SHADOW_TRANSITION_FROM_PHI0_V12.json
+
+CASE: R(3,4)
+source_n: 7
+critical_n: 8
+boundary_n: 9
+shadow_boundary_delta: 1
+phi0_source_rows: 17640
+reconstructed_clean_graphs: 17640
+total_phi0_to_next_layer: 0
+total_phi1_to_next_layer: 30240
+total_phi2_to_next_layer: 383040
+status: PASS_EXPECTED_PHI0_COUNT
+report_sha256: 3469EA2D7B54A0CBAB78B060BD0CB08BD6D3CF0196E92453862F8E63DDC930E1
+report_path: C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_TRANSITION_V12_R34_K8_TO_K9_20260514_192737\REPORT_SHADOW_TRANSITION_FROM_PHI0_V12.json
+
+Interpretation:
+R(3,3): Phi=0 and Phi=1 are absent at 5 -> 6, while Phi=2 exists, so Delta=2.
+R(3,4): Phi=0 is absent at 8 -> 9, while Phi=1 exists, so Delta=1.
+
+Conclusion:
+Delta is not a universal constant. It is a boundary-layer invariant.

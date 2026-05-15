@@ -1,0 +1,66 @@
+﻿R55 674 / 656 CORRECTION NOTE
+=============================
+
+Author: Michal Machura
+Created local: 2026-05-15T15:17:37.0758940+02:00
+
+Purpose:
+Correct the interpretation of the R55 K42 shadow audit record count.
+
+Correct status:
+674 is NOT a certified number of non-isomorphic K42 cores.
+
+674 means:
+unique labelled bit-hash records collected by scanning the workspace:
+C:\mcdo_ramsey_MASTER43
+
+This came from:
+R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607
+
+Run metadata states:
+inputs = C:\mcdo_ramsey_MASTER43
+include_complements = true
+graphs_collected = 674
+rows = 674
+
+Therefore:
+The 674 count is a scanned-workspace record-set count.
+
+It must not be described as:
+- complete catalogue
+- non-isomorphic catalogue
+- C_42^{5,5}/Iso
+- official catalogue size
+
+Correct safe claim:
+The scanned workspace K42 record set has no Phi=0 or Phi=1 one-vertex shadow extension to K43.
+
+Incorrect claim to remove:
+674 non-isomorphic K42 cores.
+
+Relation to literature / official catalogue:
+The official r55_42some.g6 catalogue must be audited separately, isolated from the workspace.
+If it contains 328 source graphs, then source + complements gives 656 labelled source/complement records.
+
+Required next step:
+Run OFFICIAL_K42_CATALOGUE_AUDIT using only:
+r55_42some.g6
+and include complements.
+
+Expected output fields:
+- official_source_records
+- official_source_plus_complement_records
+- unique_bit_hashes
+- Phi0 excluded count
+- Phi1 excluded count
+- delta=2 count
+- delta>=3 count
+
+Proof status:
+The algebraic Machura Ramsey Shadow Formula remains valid.
+The R55 workspace audit remains valid for the scanned record set.
+The global R(5,5)=43 proof still requires a certified complete catalogue modulo isomorphism.
+
+Conclusion:
+Treat 674 as scanned workspace evidence only.
+Do not use 674 as the complete C_42^{5,5}/Iso cardinality.

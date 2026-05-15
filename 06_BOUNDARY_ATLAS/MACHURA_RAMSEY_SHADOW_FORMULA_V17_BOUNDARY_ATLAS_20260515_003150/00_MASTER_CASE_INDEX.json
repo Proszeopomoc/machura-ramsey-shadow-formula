@@ -1,0 +1,61 @@
+{
+  "run_type": "MACHURA_RAMSEY_SHADOW_FORMULA_V17_BOUNDARY_ATLAS",
+  "cases": [
+    {
+      "case_name": "R(3,3)",
+      "case_id": "R3_3",
+      "case_dir": "C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura\\06_BOUNDARY_ATLAS\\MACHURA_RAMSEY_SHADOW_FORMULA_V17_BOUNDARY_ATLAS_20260515_003150\\CASE_R3_3",
+      "critical_n": 5,
+      "boundary_n": 6,
+      "shadow_boundary_delta": 2,
+      "local_delta_distribution": {
+        "2": 12
+      },
+      "witness_summary": {
+        "exists": true,
+        "total_minimal_witnesses": 240,
+        "type_distribution": {
+          "red_phi=0;blue_phi=2": 60,
+          "red_phi=1;blue_phi=1": 120,
+          "red_phi=2;blue_phi=0": 60
+        },
+        "degree_distribution": {
+          "degree=2": 120,
+          "degree=3": 120
+        },
+        "per_core_min": 20,
+        "per_core_max": 20,
+        "per_core_average": 20.0
+      }
+    },
+    {
+      "case_name": "R(3,4)",
+      "case_id": "R3_4",
+      "case_dir": "C:\\mcdo_ramsey_MASTER43\\wzor_cienia_ramseya_machura\\06_BOUNDARY_ATLAS\\MACHURA_RAMSEY_SHADOW_FORMULA_V17_BOUNDARY_ATLAS_20260515_003150\\CASE_R3_4",
+      "critical_n": 8,
+      "boundary_n": 9,
+      "shadow_boundary_delta": 1,
+      "local_delta_distribution": {
+        "1": 10080,
+        "2": 7560
+      },
+      "witness_summary": {
+        "exists": true,
+        "total_minimal_witnesses": 181440,
+        "type_distribution": {
+          "red_phi=0;blue_phi=1": 20160,
+          "red_phi=1;blue_phi=0": 10080,
+          "red_phi=1;blue_phi=1": 60480,
+          "red_phi=2;blue_phi=0": 90720
+        },
+        "degree_distribution": {
+          "degree=3": 100800,
+          "degree=4": 80640
+        },
+        "per_core_min": 3,
+        "per_core_max": 21,
+        "per_core_average": 10.285714285714286
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+MACHURA SHADOW GEOMETRY VISUAL V01
+==================================
+
+Author: Michal Machura
+Generated: 2026-05-14T23:43:57.6838712+02:00
+
+Files:
+HTML: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\05_VISUAL_REPORTS\MACHURA_SHADOW_GEOMETRY_VISUAL_V01_20260514_234356\MACHURA_SHADOW_GEOMETRY_VISUAL_V01_20260514_234356.html
+SVG: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\05_VISUAL_REPORTS\MACHURA_SHADOW_GEOMETRY_VISUAL_V01_20260514_234356\MACHURA_SHADOW_GEOMETRY_VISUAL_V01_20260514_234356.svg
+
+Confirmed Delta rows:
+R(3,3): critical_n=5, boundary_n=6, Delta=2
+R(3,4): critical_n=8, boundary_n=9, Delta=1
+
+
+R(3,3) minimal witness geometry:
+total_min_witnesses: 240
+per_core_min: 20
+per_core_max: 20
+per_core_avg: 20
+
+Type counts:
+red=0, blue=2: 60
+red=1, blue=1: 120
+red=2, blue=0: 60
+
+
+Degree counts:
+degree 2: 120
+degree 3: 120

@@ -1,0 +1,48 @@
+<svg width='820' height='760' viewBox='0 0 820 760' xmlns='http://www.w3.org/2000/svg'>
+  <rect x='0' y='0' width='820' height='760' fill='white' stroke='#222' />
+  <text x='30' y='36' font-family='Consolas, monospace' font-size='22' font-weight='bold'>Machura Shadow Geometry - Visual Summary V01</text>
+  <text x='30' y='64' font-family='Consolas, monospace' font-size='13'>Author: Michal Machura</text>
+  <text x='30' y='84' font-family='Consolas, monospace' font-size='13'>Generated: 2026-05-14T23:43:57.3234183+02:00</text>
+
+  <g transform='translate(30,110)'>
+    <svg width='760' height='210' viewBox='0 0 760 210' xmlns='http://www.w3.org/2000/svg'>
+  <rect x='0' y='0' width='760' height='210' fill='white' stroke='#222' />
+  <text x='20' y='28' font-family='Consolas, monospace' font-size='18' font-weight='bold'>Confirmed small Delta values</text>
+  <text x='20' y='64' font-family='Consolas, monospace' font-size='14'>R(3,3) Delta</text>
+  <rect x='180' y='45' width='540' height='28' fill='#4f6f96' />
+  <text x='728' y='64' font-family='Consolas, monospace' font-size='14'>2</text>
+  <text x='20' y='106' font-family='Consolas, monospace' font-size='14'>R(3,4) Delta</text>
+  <rect x='180' y='87' width='270' height='28' fill='#4f6f96' />
+  <text x='458' y='106' font-family='Consolas, monospace' font-size='14'>1</text>
+</svg>
+  </g>
+
+  <g transform='translate(30,330)'>
+    <svg width='760' height='230' viewBox='0 0 760 230' xmlns='http://www.w3.org/2000/svg'>
+  <rect x='0' y='0' width='760' height='230' fill='white' stroke='#222' />
+  <text x='20' y='28' font-family='Consolas, monospace' font-size='18' font-weight='bold'>R(3,3) minimal shadow type distribution</text>
+  <text x='20' y='64' font-family='Consolas, monospace' font-size='14'>red=0, blue=2</text>
+  <rect x='180' y='45' width='270' height='28' fill='#4f6f96' />
+  <text x='458' y='64' font-family='Consolas, monospace' font-size='14'>60</text>
+  <text x='20' y='106' font-family='Consolas, monospace' font-size='14'>red=1, blue=1</text>
+  <rect x='180' y='87' width='540' height='28' fill='#4f6f96' />
+  <text x='728' y='106' font-family='Consolas, monospace' font-size='14'>120</text>
+  <text x='20' y='148' font-family='Consolas, monospace' font-size='14'>red=2, blue=0</text>
+  <rect x='180' y='129' width='270' height='28' fill='#4f6f96' />
+  <text x='458' y='148' font-family='Consolas, monospace' font-size='14'>60</text>
+</svg>
+  </g>
+
+  <g transform='translate(30,580)'>
+    <svg width='760' height='190' viewBox='0 0 760 190' xmlns='http://www.w3.org/2000/svg'>
+  <rect x='0' y='0' width='760' height='190' fill='white' stroke='#222' />
+  <text x='20' y='28' font-family='Consolas, monospace' font-size='18' font-weight='bold'>R(3,3) minimal chi degree distribution</text>
+  <text x='20' y='64' font-family='Consolas, monospace' font-size='14'>degree 2</text>
+  <rect x='180' y='45' width='540' height='28' fill='#4f6f96' />
+  <text x='728' y='64' font-family='Consolas, monospace' font-size='14'>120</text>
+  <text x='20' y='106' font-family='Consolas, monospace' font-size='14'>degree 3</text>
+  <rect x='180' y='87' width='540' height='28' fill='#4f6f96' />
+  <text x='728' y='106' font-family='Consolas, monospace' font-size='14'>120</text>
+</svg>
+  </g>
+</svg>

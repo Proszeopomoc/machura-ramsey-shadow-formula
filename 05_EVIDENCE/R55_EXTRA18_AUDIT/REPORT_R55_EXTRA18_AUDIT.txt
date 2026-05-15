@@ -1,0 +1,22 @@
+﻿R55 EXTRA 18 BIT-HASH RECORD AUDIT
+==================================
+
+Result:
+The full workspace scan contains 674 unique K42 bit-hash records.
+
+Baseline/reference set:
+656 records.
+
+Additional records:
+18 records = 9 source records + 9 complements.
+
+Important:
+These are additional labelled bit-hash records.
+This does not yet prove 9 new non-isomorphic graph classes.
+
+Required next step:
+Canonical/isomorphism audit against the baseline 656 records.
+
+Safe wording:
+The workspace audit found 18 additional unique labelled K42 bit-hash records outside the baseline reference set, arranged as 9 source/complement pairs. Their isomorphism status relative to the known catalogue remains to be certified.
+

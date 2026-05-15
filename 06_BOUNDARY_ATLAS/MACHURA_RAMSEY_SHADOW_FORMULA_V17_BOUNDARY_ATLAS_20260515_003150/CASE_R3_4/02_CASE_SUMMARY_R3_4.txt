@@ -1,0 +1,40 @@
+MACHURA RAMSEY SHADOW FORMULA - CASE R3_4
+==============================================
+
+case_name: R(3,4)
+source_n: 7
+critical_n: 8
+boundary_n: 9
+shadow_boundary_delta: 1
+
+Transition evidence:
+phi0_source_rows: 17640
+reconstructed_clean_graphs_n_plus_1: 17640
+total_phi0_to_next_layer: 0
+total_phi1_to_next_layer: 30240
+total_phi2_to_next_layer: 383040
+global_min_phi_to_next_layer: 1
+global_phi_hist_to_next_layer: {"1": 30240, "10": 15120, "11": 10080, "12": 7560, "2": 383040, "3": 1663200, "4": 1184400, "5": 645120, "6": 262080, "7": 171360, "8": 103320, "9": 40320}
+
+Local Delta geometry:
+local_delta_distribution: {"1": 10080, "2": 7560}
+
+Minimal shadow witness geometry:
+total_minimal_witnesses: 181440
+type_distribution: {"red_phi=0;blue_phi=1": 20160, "red_phi=1;blue_phi=0": 10080, "red_phi=1;blue_phi=1": 60480, "red_phi=2;blue_phi=0": 90720}
+degree_distribution: {"degree=3": 100800, "degree=4": 80640}
+per_core_min: 3
+per_core_max: 21
+per_core_average: 10.285714285714286
+
+Meaning:
+The transition report reconstructs the clean critical layer from Phi=0 shadows.
+Then it computes the shadow from the critical layer to the boundary layer.
+The smallest nonzero shadow value is recorded as shadow_boundary_delta.
+
+Official formula names:
+Phi_G(x)
+score_{a,b}(G)
+C_n^{a,b}
+Delta_{a,b}(critical_n -> boundary_n)
+shadow_boundary_delta(R(a,b))

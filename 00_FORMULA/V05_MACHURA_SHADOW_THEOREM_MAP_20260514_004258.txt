@@ -1,0 +1,262 @@
+MACHURA RAMSEY SHADOW THEOREM MAP
+V05 ONE VIEW
+=================================
+
+Author:
+Michal Machura
+
+Purpose:
+One-view formal map of the Machura Ramsey Shadow theory using standard
+Ramsey-theoretic terminology.
+
+This file is theoretical.
+It does not contain a numerical proof.
+It does not enumerate graphs.
+It does not expose solver internals.
+
+1. Standard Ramsey objects
+==========================
+
+Ramsey number:
+
+R(a,b)
+
+is the smallest integer N such that every graph on N vertices contains
+a clique K_a or an independent set of size b.
+
+Equivalently, in two-color edge language:
+
+every red-blue coloring of K_N contains a red K_a or a blue K_b.
+
+Clean graph:
+
+A graph G is called (a,b)-clean if:
+
+G contains no clique K_a,
+
+and:
+
+G^c contains no clique K_b.
+
+Equivalently:
+
+G has no red K_a and no blue K_b.
+
+Clean layer:
+
+C_n^{a,b}
+=
+{G : |V(G)| = n and G is (a,b)-clean}.
+
+2. Conflict set
+===============
+
+Define the Ramsey conflict set:
+
+Conf_{a,b}(G)
+=
+RedK_a(G) union BlueK_b(G^c).
+
+A graph is clean if and only if:
+
+Conf_{a,b}(G) = empty.
+
+The score is the size of the conflict set:
+
+score_{a,b}(G)
+=
+|Conf_{a,b}(G)|.
+
+3. One-vertex extension
+=======================
+
+Let G be a clean core.
+
+Let chi be a connection map from a new vertex to the old vertex set:
+
+chi : V(G) -> {red, blue}.
+
+The extended graph is:
+
+G + chi.
+
+4. Machura shadow
+=================
+
+The shadow Phi_{a,b,G}(chi) is the set of all new forbidden Ramsey
+conflicts created by the added vertex.
+
+It consists of:
+
+red K_a created from red K_{a-1} structures in G,
+
+and:
+
+blue K_b created from blue K_{b-1} structures in G^c.
+
+5. Forward identity
+===================
+
+For every graph G and every connection map chi:
+
+Conf_{a,b}(G + chi)
+=
+Conf_{a,b}(G) union Phi_{a,b,G}(chi).
+
+In score form:
+
+score_{a,b}(G + chi)
+=
+score_{a,b}(G) + |Phi_{a,b,G}(chi)|.
+
+For a clean core G:
+
+score_{a,b}(G) = 0,
+
+so:
+
+score_{a,b}(G + chi)
+=
+|Phi_{a,b,G}(chi)|.
+
+6. Reverse identity
+===================
+
+Let H be a graph and v in V(H).
+
+Let:
+
+G_v = H - v.
+
+Let chi_v be the connection map induced by v to G_v.
+
+Then:
+
+score_{a,b}(H)
+=
+score_{a,b}(H - v)
++
+|Phi_{a,b,H-v}(chi_v)|.
+
+Equivalently:
+
+|Phi_{a,b,H-v}(chi_v)|
+=
+score_{a,b}(H) - score_{a,b}(H - v).
+
+Interpretation:
+
+The shadow of v is exactly the part of the Ramsey conflict score
+that disappears when v is removed.
+
+7. Vertex-sum identity
+======================
+
+For every graph H:
+
+sum_{v in V(H)} |Phi_v(H)|
+=
+a * |RedK_a(H)|
++
+b * |BlueK_b(H^c)|.
+
+This is the global consistency identity of the shadow calculus.
+
+8. Reversal equivalence
+=======================
+
+The following are equivalent:
+
+A. There exists a clean graph H on succ(n) vertices.
+
+B. There exists a clean core G in C_n^{a,b} and a connection map chi
+   such that:
+
+   Phi_{a,b,G}(chi) = empty.
+
+In words:
+
+A clean larger graph exists exactly when a clean core has an empty shadow.
+
+9. Shadow closure theorem
+=========================
+
+If:
+
+C_n^{a,b} is not empty,
+
+and:
+
+for every G in C_n^{a,b}
+and every connection map chi,
+
+Phi_{a,b,G}(chi) is not empty,
+
+then:
+
+C_{succ(n)}^{a,b} is empty.
+
+Therefore:
+
+R(a,b) = succ(n).
+
+10. Falsification criterion
+===========================
+
+To refute the closure claim at a layer, it is enough to find one pair:
+
+G in C_n^{a,b},
+
+chi : V(G) -> {red, blue},
+
+such that:
+
+Phi_{a,b,G}(chi) = empty.
+
+This constructs a clean graph:
+
+H = G + chi
+
+on succ(n) vertices.
+
+11. Quantitative Delta layer
+============================
+
+Define:
+
+Delta_{a,b}(n -> succ(n))
+=
+min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}(chi)|.
+
+Then:
+
+Delta_{a,b}(n -> succ(n)) > 0
+
+is equivalent to shadow closure at the layer.
+
+A concrete value of Delta is evidence-level data.
+The abstract theory requires only positivity.
+
+12. Named structure
+===================
+
+The theory consists of four named components:
+
+1. Machura Shadow Phi
+2. Forward Shadow Identity
+3. Reverse Shadow Difference Identity
+4. Shadow Closure Theorem
+
+Together they define a one-vertex Ramsey shadow calculus.
+
+13. Core sentence
+=================
+
+No empty shadow over the clean core layer means Ramsey closure at the
+next vertex.
+
+Equivalently:
+
+C_{succ(n)}^{a,b} = empty
+if and only if
+every clean core G in C_n^{a,b} has no empty extension shadow.

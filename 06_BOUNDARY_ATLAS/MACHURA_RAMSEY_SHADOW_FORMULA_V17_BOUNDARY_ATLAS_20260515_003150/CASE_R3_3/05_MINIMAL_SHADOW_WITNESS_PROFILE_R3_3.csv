@@ -1,0 +1,6 @@
+case_name,profile_type,profile_key,count
+"R(3,3)",red_blue_phi,red_phi=0;blue_phi=2,60
+"R(3,3)",red_blue_phi,red_phi=1;blue_phi=1,120
+"R(3,3)",red_blue_phi,red_phi=2;blue_phi=0,60
+"R(3,3)",degree,degree=2,120
+"R(3,3)",degree,degree=3,120

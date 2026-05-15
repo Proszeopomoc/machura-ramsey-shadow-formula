@@ -1,0 +1,39 @@
+﻿R55 EXTRA 18 INTERPRETATION
+===========================
+
+Author:
+Michal Machura
+
+Context:
+The full workspace audit contains 674 unique labelled K42 bit-hash records.
+
+Reference baseline:
+656 records correspond to the known/reference layer.
+
+Additional workspace-labelled records:
+18 records = 9 source records + 9 complements.
+
+Important observation:
+All 9 source records are stored in paths named:
+
+K42_valid_attempt*_knownTrue
+
+Therefore these records are classified as recovered known-reference labelled records.
+
+Conclusion:
+The extra 18 records are not claimed as 18 new non-isomorphic graphs.
+They are additional labelled bit-hash records recovered during K42_WAVE_ESCAPE and marked knownTrue by the validation workflow.
+
+Safe paper wording:
+The audit used 674 unique labelled K42 bit-hash records. Of these, 656 correspond to the known/reference catalogue layer, while 18 additional records came from workspace recovery runs and were marked knownTrue. These 18 are used as additional validation records, not as a claim of new isomorphism classes.
+
+Recommended theorem wording:
+For the public proof package, distinguish:
+- reference/catalogue layer: 656 records
+- workspace labelled audit layer: 674 records
+
+Do not write:
+9 new graphs were found.
+
+Write:
+9 additional source records plus their complements were recovered as labelled knownTrue records in the workspace audit.

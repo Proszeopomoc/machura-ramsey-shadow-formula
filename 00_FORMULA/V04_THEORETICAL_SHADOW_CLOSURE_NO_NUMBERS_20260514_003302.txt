@@ -1,0 +1,295 @@
+MACHURA RAMSEY SHADOW THEORY
+V04 THEORETICAL CLOSURE WITHOUT NUMERICAL PARAMETERS
+====================================================
+
+Author:
+Michal Machura
+
+Scope:
+This document formulates the Machura Ramsey Shadow theory without using
+the numerical R(5,5) boundary values.
+
+The purpose is to express the theory as a general Ramsey-theoretic
+one-vertex extension and deletion calculus.
+
+No numerical Delta value is used in this document.
+No enumeration result is used in this document.
+No solver-specific mechanism is used in this document.
+
+1. Standard Ramsey setting
+==========================
+
+Let R(a,b) denote the classical Ramsey number.
+
+A graph G is called an (a,b)-clean graph if:
+
+G contains no red K_a,
+
+and the complement graph G^c contains no blue K_b.
+
+Equivalently:
+
+Conf_{a,b}(G) = empty,
+
+where:
+
+Conf_{a,b}(G)
+=
+RedK_a(G) union BlueK_b(G^c).
+
+Let:
+
+C_n^{a,b}
+=
+{G : |V(G)| = n and Conf_{a,b}(G) = empty}.
+
+Thus C_n^{a,b} is the layer of clean Ramsey cores on n vertices.
+
+2. One-vertex extension
+=======================
+
+Let G be a graph on vertex set V.
+
+Let chi be a connection map from a new vertex to the old core:
+
+chi : V(G) -> {red, blue}.
+
+The extended graph is denoted:
+
+G + chi.
+
+The shadow Phi_{a,b,G}(chi) is defined as the set of all new forbidden
+Ramsey conflicts created with the participation of the added vertex.
+
+Thus Phi contains exactly those forbidden structures which did not exist
+inside G alone and which become complete after adding the new vertex.
+
+3. Forward shadow identity
+==========================
+
+For every graph G and every connection map chi:
+
+Conf_{a,b}(G + chi)
+=
+Conf_{a,b}(G) union Phi_{a,b,G}(chi).
+
+In score form:
+
+score_{a,b}(G + chi)
+=
+score_{a,b}(G) + |Phi_{a,b,G}(chi)|.
+
+If G is clean, then:
+
+Conf_{a,b}(G) = empty,
+
+so:
+
+Conf_{a,b}(G + chi)
+=
+Phi_{a,b,G}(chi).
+
+Therefore, for a clean core, the whole obstruction to a clean extension
+is exactly the shadow.
+
+4. Reverse shadow identity
+==========================
+
+Let H be a graph and let v be a vertex of H.
+
+Define:
+
+G_v = H - v.
+
+Let chi_v be the connection map induced by the deleted vertex v:
+
+chi_v : V(G_v) -> {red, blue}.
+
+Then:
+
+Conf_{a,b}(H)
+=
+Conf_{a,b}(H - v) union Phi_{a,b,H-v}(chi_v).
+
+In score form:
+
+score_{a,b}(H)
+=
+score_{a,b}(H - v) + |Phi_{a,b,H-v}(chi_v)|.
+
+Equivalently:
+
+|Phi_{a,b,H-v}(chi_v)|
+=
+score_{a,b}(H) - score_{a,b}(H - v).
+
+Interpretation:
+
+The shadow of a deleted vertex is exactly the part of the Ramsey conflict
+score that disappears when the vertex is removed.
+
+5. Vertex-sum identity
+======================
+
+Summing the reverse shadow over all vertices of H gives:
+
+sum_{v in V(H)} |Phi_v(H)|
+=
+a * |RedK_a(H)| + b * |BlueK_b(H^c)|.
+
+Reason:
+
+Every red K_a has exactly a vertices, so it is counted once for each
+of its vertices.
+
+Every blue K_b has exactly b vertices, so it is counted once for each
+of its vertices.
+
+This gives a global consistency check for the shadow calculus.
+
+6. Shadow reversal lemma
+========================
+
+The following statements are equivalent:
+
+A. There exists a clean graph H on succ(n) vertices.
+
+B. There exists a clean core G in C_n^{a,b} and a connection map chi
+   such that:
+
+   Phi_{a,b,G}(chi) = empty.
+
+Proof from B to A:
+
+If G is clean and Phi_{a,b,G}(chi) is empty, then:
+
+Conf(G + chi)
+=
+Conf(G) union Phi_G(chi)
+=
+empty union empty
+=
+empty.
+
+Therefore G + chi is clean.
+
+Proof from A to B:
+
+If H is clean on succ(n) vertices, delete any vertex v.
+
+Then:
+
+G_v = H - v
+
+is clean, because deleting a vertex cannot create a forbidden clique
+or independent set.
+
+The deleted vertex induces a connection map chi_v.
+
+Since H is clean, the deleted vertex participates in no forbidden
+Ramsey conflict.
+
+Therefore:
+
+Phi_{G_v}(chi_v) = empty.
+
+Thus a clean larger graph exists if and only if a clean core with empty
+shadow exists.
+
+7. Shadow closure theorem
+=========================
+
+If:
+
+C_n^{a,b} is not empty,
+
+and:
+
+for every G in C_n^{a,b}
+and every connection map chi : V(G) -> {red, blue},
+
+Phi_{a,b,G}(chi) is not empty,
+
+then:
+
+C_{succ(n)}^{a,b} is empty.
+
+Therefore:
+
+R(a,b) = succ(n).
+
+This is the theoretical form of the Machura Shadow Closure.
+
+8. Falsification criterion
+==========================
+
+To refute shadow closure at a given layer, it is enough to find one pair:
+
+(G, chi)
+
+such that:
+
+G in C_n^{a,b},
+
+and:
+
+Phi_{a,b,G}(chi) = empty.
+
+Such a pair immediately constructs a clean graph:
+
+H = G + chi
+
+on succ(n) vertices.
+
+Thus the entire closure claim is falsified by one empty shadow.
+
+9. Quantitative Delta layer
+===========================
+
+The qualitative theory requires only:
+
+Phi_{a,b,G}(chi) is not empty.
+
+The quantitative version defines:
+
+Delta_{a,b}(n -> succ(n))
+=
+min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}(chi)|.
+
+Then:
+
+Delta_{a,b}(n -> succ(n)) > 0
+
+is equivalent to shadow closure at that layer.
+
+A concrete numerical value of Delta belongs to the evidence and audit
+layer, not to the abstract theory in this document.
+
+10. Relation to validated tests
+===============================
+
+The forward and reverse identities were locally validated on real clean
+Ramsey cores by the following tests:
+
+V01:
+Shadow reversal validation.
+Clean H gives clean deleted cores and empty reconstructed shadow.
+
+V03:
+Shadow difference validation.
+The deleted-vertex shadow equals score(H) - score(H-v), including
+separate red and blue components and the vertex-sum identity.
+
+These tests validate the internal consistency of the shadow calculus.
+They do not replace a full layer enumeration.
+
+11. Core sentence
+=================
+
+A clean graph one vertex larger exists exactly when a clean core has an
+empty shadow.
+
+Equivalently:
+
+No empty shadow over the clean core layer means Ramsey closure at the
+next vertex.

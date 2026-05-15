@@ -1,0 +1,11 @@
+MACHURA R34 GRAPH VISUAL V03
+============================
+
+Graphs: C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_TRANSITION_V12_R34_K8_TO_K9_20260514_192737\EXTENDED_CLEAN_LAYER_R3_4_N8_FROM_PHI0.csv
+Graphs SHA256: 71aebd5a6211e35d5accb404ab272965910c263d60f81df35268e87388becfe1
+Panels: 12
+
+Type counts:
+red=0, blue=1: 5
+red=1, blue=1: 3
+red=2, blue=0: 4

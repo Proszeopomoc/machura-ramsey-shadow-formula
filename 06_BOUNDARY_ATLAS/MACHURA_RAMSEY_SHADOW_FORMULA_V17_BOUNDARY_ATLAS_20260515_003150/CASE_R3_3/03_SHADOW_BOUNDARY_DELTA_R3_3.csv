@@ -1,0 +1,2 @@
+case_name,a,b,source_n,critical_n,boundary_n,shadow_boundary_delta,total_phi0_to_next_layer,total_phi1_to_next_layer,total_phi2_to_next_layer,status
+"R(3,3)",3,3,4,5,6,2,0,0,240,PASS_EXPECTED_PHI0_COUNT

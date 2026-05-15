@@ -1,0 +1,59 @@
+{
+  "case_name": "R(3,4)",
+  "a": 3,
+  "b": 4,
+  "source_n": 7,
+  "critical_n": 8,
+  "boundary_n": 9,
+  "shadow_boundary_delta": 1,
+  "status": "PASS_EXPECTED_PHI0_COUNT",
+  "phi0_source_rows": 17640,
+  "reconstructed_clean_graphs_n_plus_1": 17640,
+  "graphs_with_phi0_to_next_layer": 0,
+  "total_phi0_to_next_layer": 0,
+  "total_phi1_to_next_layer": 30240,
+  "total_phi2_to_next_layer": 383040,
+  "global_min_phi_to_next_layer": 1,
+  "global_phi_hist_to_next_layer": {
+    "1": 30240,
+    "2": 383040,
+    "3": 1663200,
+    "4": 1184400,
+    "5": 645120,
+    "6": 262080,
+    "7": 171360,
+    "8": 103320,
+    "9": 40320,
+    "10": 15120,
+    "11": 10080,
+    "12": 7560
+  },
+  "local_delta_distribution": {
+    "1": 10080,
+    "2": 7560
+  },
+  "graphs_analyzed_by_v16": 17640,
+  "witness_summary": {
+    "exists": true,
+    "total_minimal_witnesses": 181440,
+    "type_distribution": {
+      "red_phi=0;blue_phi=1": 20160,
+      "red_phi=1;blue_phi=0": 10080,
+      "red_phi=1;blue_phi=1": 60480,
+      "red_phi=2;blue_phi=0": 90720
+    },
+    "degree_distribution": {
+      "degree=3": 100800,
+      "degree=4": 80640
+    },
+    "per_core_min": 3,
+    "per_core_max": 21,
+    "per_core_average": 10.285714285714286
+  },
+  "source_files": {
+    "transition_report": "C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_TRANSITION_V12_R34_K8_TO_K9_20260514_192737\\REPORT_SHADOW_TRANSITION_FROM_PHI0_V12.json",
+    "transition_report_sha256": "3469ea2d7b54a0cbab78b060bd0cb08bd6d3cf0196e92453862f8e63ddc930e1",
+    "v16_report": "C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_COORDINATE_PROFILER_V16_R34_N8_20260514_235043\\REPORT_SHADOW_COORDINATE_PROFILER_V16.json",
+    "v16_report_sha256": "b9a76842fbc7a00d5adb0f22e5b0a26e314214630ae4b312d34af6dfce855b1d"
+  }
+}

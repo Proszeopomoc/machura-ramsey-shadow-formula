@@ -1,0 +1,984 @@
+MACHURA RAMSEY SHADOW THEORY - UNIFIED SIGNED VIEW
+==================================================
+
+Author: Michal Machura
+Generated UTC: 2026-05-13T22:45:10.403797+00:00
+Project root: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura
+
+Scope:
+This document collects the current theory layer of the Machura Ramsey Shadow Formula.
+It uses standard Ramsey terminology and separates theory from numerical audit evidence.
+
+Included source files:
+----------------------
+8ae4fd0580647c6581571642c6a545d29382e21af2b9b9fbb84535fd708a70d4  00_FORMULA\04_shadow_reversal_lemma.md
+8e298c39e2f86c8a4a1846ae56e016e5406d0a63c81bfc7abffdce918fac46b8  00_FORMULA\V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS_20260514_003302.txt
+d5389c99000c09ce1a1954d84dfadd8f977570ef8d6743441542603a6be1e032  00_FORMULA\V05_MACHURA_SHADOW_THEOREM_MAP_20260514_004258.txt
+cd27e84c13107bec6c86b78d8238ec73cdd251c58f5a81869b6995761d7e1610  00_FORMULA\WZOR_CIENIA_LICZB_RAMSEY_MACHURA_FULL.txt
+e34dbe939f013e9c87ec7f8a11af8f4d383a49a9e4d28a61981dfb8dcd854fcd  03_EVIDENCE\EVIDENCE_INDEX.txt
+9b0f9ad29636d2f73e2a89ca49486b3fd20520c9b503a591ba516796b7646a8c  03_EVIDENCE\V01_SAMPLE3_REVERSAL_VALIDATION_SUMMARY_20260514_002128.txt
+98c9a33da24f44a57690db3821ad0b8fbfc0fbd33d2be95d625997c82b04a311  03_EVIDENCE\V03_SHADOW_DIFFERENCE_VALIDATION_SAMPLE3_20260514_002943.txt
+
+DOCUMENT BODY
+=============
+
+
+======================================================================
+SOURCE FILE: 00_FORMULA\04_shadow_reversal_lemma.md
+SHA256: 8ae4fd0580647c6581571642c6a545d29382e21af2b9b9fbb84535fd708a70d4
+======================================================================
+
+﻿LEMAT ODWRÓCENIA CIENIA
+=======================
+
+Autor: Michal Machura
+
+Niech C_n^{a,b} oznacza zbior czystych rdzeni Ramseyowskich.
+
+Niech chi : V(G) -> {red, blue} oznacza sposob polaczenia nowego
+wierzcholka z rdzeniem G.
+
+Niech G + chi oznacza graf po dodaniu nowego wierzcholka.
+
+Definiujemy:
+
+Conf_{a,b}(G)
+=
+RedK_a(G) union BlueK_b(G^c)
+
+oraz:
+
+Phi_{a,b,G}(chi)
+=
+zbior nowych konfliktow powstalych z udzialem dodanego wierzcholka.
+
+Wzor przyrostu:
+
+Conf_{a,b}(G + chi)
+=
+Conf_{a,b}(G) union Phi_{a,b,G}(chi)
+
+Dla czystego rdzenia:
+
+Conf_{a,b}(G) = empty
+
+zatem:
+
+Conf_{a,b}(G + chi) = Phi_{a,b,G}(chi)
+
+Lemat odwrocenia:
+
+C_{succ(n)}^{a,b} != empty
+
+wtedy i tylko wtedy, gdy istnieje G in C_n^{a,b}
+oraz istnieje chi : V(G) -> {red, blue}
+takie, ze:
+
+Phi_{a,b,G}(chi) = empty.
+
+Dowod w przod:
+
+Jesli istnieje para (G, chi) z pustym cieniem, to:
+
+Conf(G + chi)
+=
+Conf(G) union Phi_G(chi)
+=
+empty union empty
+=
+empty
+
+czyli G + chi jest czysty.
+
+Dowod w tyl:
+
+Jesli istnieje czysty graf H na succ(n) wierzcholkach,
+to po usunieciu dowolnego wierzcholka v dostajemy czysty rdzen:
+
+G = H - v
+
+Kolory krawedzi z v do G definiuja chi.
+
+Poniewaz H byl czysty, dodany wierzcholek nie tworzy zadnego konfliktu,
+wiec:
+
+Phi_G(chi) = empty.
+
+Wniosek:
+
+Szukanie czystego grafu na succ(n) jest rownowazne szukaniu
+pustego cienia nad czystym rdzeniem na n.
+
+
+
+======================================================================
+SOURCE FILE: 00_FORMULA\V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS_20260514_003302.txt
+SHA256: 8e298c39e2f86c8a4a1846ae56e016e5406d0a63c81bfc7abffdce918fac46b8
+======================================================================
+
+MACHURA RAMSEY SHADOW THEORY
+V04 THEORETICAL CLOSURE WITHOUT NUMERICAL PARAMETERS
+====================================================
+
+Author:
+Michal Machura
+
+Scope:
+This document formulates the Machura Ramsey Shadow theory without using
+the numerical R(5,5) boundary values.
+
+The purpose is to express the theory as a general Ramsey-theoretic
+one-vertex extension and deletion calculus.
+
+No numerical Delta value is used in this document.
+No enumeration result is used in this document.
+No solver-specific mechanism is used in this document.
+
+1. Standard Ramsey setting
+==========================
+
+Let R(a,b) denote the classical Ramsey number.
+
+A graph G is called an (a,b)-clean graph if:
+
+G contains no red K_a,
+
+and the complement graph G^c contains no blue K_b.
+
+Equivalently:
+
+Conf_{a,b}(G) = empty,
+
+where:
+
+Conf_{a,b}(G)
+=
+RedK_a(G) union BlueK_b(G^c).
+
+Let:
+
+C_n^{a,b}
+=
+{G : |V(G)| = n and Conf_{a,b}(G) = empty}.
+
+Thus C_n^{a,b} is the layer of clean Ramsey cores on n vertices.
+
+2. One-vertex extension
+=======================
+
+Let G be a graph on vertex set V.
+
+Let chi be a connection map from a new vertex to the old core:
+
+chi : V(G) -> {red, blue}.
+
+The extended graph is denoted:
+
+G + chi.
+
+The shadow Phi_{a,b,G}(chi) is defined as the set of all new forbidden
+Ramsey conflicts created with the participation of the added vertex.
+
+Thus Phi contains exactly those forbidden structures which did not exist
+inside G alone and which become complete after adding the new vertex.
+
+3. Forward shadow identity
+==========================
+
+For every graph G and every connection map chi:
+
+Conf_{a,b}(G + chi)
+=
+Conf_{a,b}(G) union Phi_{a,b,G}(chi).
+
+In score form:
+
+score_{a,b}(G + chi)
+=
+score_{a,b}(G) + |Phi_{a,b,G}(chi)|.
+
+If G is clean, then:
+
+Conf_{a,b}(G) = empty,
+
+so:
+
+Conf_{a,b}(G + chi)
+=
+Phi_{a,b,G}(chi).
+
+Therefore, for a clean core, the whole obstruction to a clean extension
+is exactly the shadow.
+
+4. Reverse shadow identity
+==========================
+
+Let H be a graph and let v be a vertex of H.
+
+Define:
+
+G_v = H - v.
+
+Let chi_v be the connection map induced by the deleted vertex v:
+
+chi_v : V(G_v) -> {red, blue}.
+
+Then:
+
+Conf_{a,b}(H)
+=
+Conf_{a,b}(H - v) union Phi_{a,b,H-v}(chi_v).
+
+In score form:
+
+score_{a,b}(H)
+=
+score_{a,b}(H - v) + |Phi_{a,b,H-v}(chi_v)|.
+
+Equivalently:
+
+|Phi_{a,b,H-v}(chi_v)|
+=
+score_{a,b}(H) - score_{a,b}(H - v).
+
+Interpretation:
+
+The shadow of a deleted vertex is exactly the part of the Ramsey conflict
+score that disappears when the vertex is removed.
+
+5. Vertex-sum identity
+======================
+
+Summing the reverse shadow over all vertices of H gives:
+
+sum_{v in V(H)} |Phi_v(H)|
+=
+a * |RedK_a(H)| + b * |BlueK_b(H^c)|.
+
+Reason:
+
+Every red K_a has exactly a vertices, so it is counted once for each
+of its vertices.
+
+Every blue K_b has exactly b vertices, so it is counted once for each
+of its vertices.
+
+This gives a global consistency check for the shadow calculus.
+
+6. Shadow reversal lemma
+========================
+
+The following statements are equivalent:
+
+A. There exists a clean graph H on succ(n) vertices.
+
+B. There exists a clean core G in C_n^{a,b} and a connection map chi
+   such that:
+
+   Phi_{a,b,G}(chi) = empty.
+
+Proof from B to A:
+
+If G is clean and Phi_{a,b,G}(chi) is empty, then:
+
+Conf(G + chi)
+=
+Conf(G) union Phi_G(chi)
+=
+empty union empty
+=
+empty.
+
+Therefore G + chi is clean.
+
+Proof from A to B:
+
+If H is clean on succ(n) vertices, delete any vertex v.
+
+Then:
+
+G_v = H - v
+
+is clean, because deleting a vertex cannot create a forbidden clique
+or independent set.
+
+The deleted vertex induces a connection map chi_v.
+
+Since H is clean, the deleted vertex participates in no forbidden
+Ramsey conflict.
+
+Therefore:
+
+Phi_{G_v}(chi_v) = empty.
+
+Thus a clean larger graph exists if and only if a clean core with empty
+shadow exists.
+
+7. Shadow closure theorem
+=========================
+
+If:
+
+C_n^{a,b} is not empty,
+
+and:
+
+for every G in C_n^{a,b}
+and every connection map chi : V(G) -> {red, blue},
+
+Phi_{a,b,G}(chi) is not empty,
+
+then:
+
+C_{succ(n)}^{a,b} is empty.
+
+Therefore:
+
+R(a,b) = succ(n).
+
+This is the theoretical form of the Machura Shadow Closure.
+
+8. Falsification criterion
+==========================
+
+To refute shadow closure at a given layer, it is enough to find one pair:
+
+(G, chi)
+
+such that:
+
+G in C_n^{a,b},
+
+and:
+
+Phi_{a,b,G}(chi) = empty.
+
+Such a pair immediately constructs a clean graph:
+
+H = G + chi
+
+on succ(n) vertices.
+
+Thus the entire closure claim is falsified by one empty shadow.
+
+9. Quantitative Delta layer
+===========================
+
+The qualitative theory requires only:
+
+Phi_{a,b,G}(chi) is not empty.
+
+The quantitative version defines:
+
+Delta_{a,b}(n -> succ(n))
+=
+min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}(chi)|.
+
+Then:
+
+Delta_{a,b}(n -> succ(n)) > 0
+
+is equivalent to shadow closure at that layer.
+
+A concrete numerical value of Delta belongs to the evidence and audit
+layer, not to the abstract theory in this document.
+
+10. Relation to validated tests
+===============================
+
+The forward and reverse identities were locally validated on real clean
+Ramsey cores by the following tests:
+
+V01:
+Shadow reversal validation.
+Clean H gives clean deleted cores and empty reconstructed shadow.
+
+V03:
+Shadow difference validation.
+The deleted-vertex shadow equals score(H) - score(H-v), including
+separate red and blue components and the vertex-sum identity.
+
+These tests validate the internal consistency of the shadow calculus.
+They do not replace a full layer enumeration.
+
+11. Core sentence
+=================
+
+A clean graph one vertex larger exists exactly when a clean core has an
+empty shadow.
+
+Equivalently:
+
+No empty shadow over the clean core layer means Ramsey closure at the
+next vertex.
+
+
+======================================================================
+SOURCE FILE: 00_FORMULA\V05_MACHURA_SHADOW_THEOREM_MAP_20260514_004258.txt
+SHA256: d5389c99000c09ce1a1954d84dfadd8f977570ef8d6743441542603a6be1e032
+======================================================================
+
+MACHURA RAMSEY SHADOW THEOREM MAP
+V05 ONE VIEW
+=================================
+
+Author:
+Michal Machura
+
+Purpose:
+One-view formal map of the Machura Ramsey Shadow theory using standard
+Ramsey-theoretic terminology.
+
+This file is theoretical.
+It does not contain a numerical proof.
+It does not enumerate graphs.
+It does not expose solver internals.
+
+1. Standard Ramsey objects
+==========================
+
+Ramsey number:
+
+R(a,b)
+
+is the smallest integer N such that every graph on N vertices contains
+a clique K_a or an independent set of size b.
+
+Equivalently, in two-color edge language:
+
+every red-blue coloring of K_N contains a red K_a or a blue K_b.
+
+Clean graph:
+
+A graph G is called (a,b)-clean if:
+
+G contains no clique K_a,
+
+and:
+
+G^c contains no clique K_b.
+
+Equivalently:
+
+G has no red K_a and no blue K_b.
+
+Clean layer:
+
+C_n^{a,b}
+=
+{G : |V(G)| = n and G is (a,b)-clean}.
+
+2. Conflict set
+===============
+
+Define the Ramsey conflict set:
+
+Conf_{a,b}(G)
+=
+RedK_a(G) union BlueK_b(G^c).
+
+A graph is clean if and only if:
+
+Conf_{a,b}(G) = empty.
+
+The score is the size of the conflict set:
+
+score_{a,b}(G)
+=
+|Conf_{a,b}(G)|.
+
+3. One-vertex extension
+=======================
+
+Let G be a clean core.
+
+Let chi be a connection map from a new vertex to the old vertex set:
+
+chi : V(G) -> {red, blue}.
+
+The extended graph is:
+
+G + chi.
+
+4. Machura shadow
+=================
+
+The shadow Phi_{a,b,G}(chi) is the set of all new forbidden Ramsey
+conflicts created by the added vertex.
+
+It consists of:
+
+red K_a created from red K_{a-1} structures in G,
+
+and:
+
+blue K_b created from blue K_{b-1} structures in G^c.
+
+5. Forward identity
+===================
+
+For every graph G and every connection map chi:
+
+Conf_{a,b}(G + chi)
+=
+Conf_{a,b}(G) union Phi_{a,b,G}(chi).
+
+In score form:
+
+score_{a,b}(G + chi)
+=
+score_{a,b}(G) + |Phi_{a,b,G}(chi)|.
+
+For a clean core G:
+
+score_{a,b}(G) = 0,
+
+so:
+
+score_{a,b}(G + chi)
+=
+|Phi_{a,b,G}(chi)|.
+
+6. Reverse identity
+===================
+
+Let H be a graph and v in V(H).
+
+Let:
+
+G_v = H - v.
+
+Let chi_v be the connection map induced by v to G_v.
+
+Then:
+
+score_{a,b}(H)
+=
+score_{a,b}(H - v)
++
+|Phi_{a,b,H-v}(chi_v)|.
+
+Equivalently:
+
+|Phi_{a,b,H-v}(chi_v)|
+=
+score_{a,b}(H) - score_{a,b}(H - v).
+
+Interpretation:
+
+The shadow of v is exactly the part of the Ramsey conflict score
+that disappears when v is removed.
+
+7. Vertex-sum identity
+======================
+
+For every graph H:
+
+sum_{v in V(H)} |Phi_v(H)|
+=
+a * |RedK_a(H)|
++
+b * |BlueK_b(H^c)|.
+
+This is the global consistency identity of the shadow calculus.
+
+8. Reversal equivalence
+=======================
+
+The following are equivalent:
+
+A. There exists a clean graph H on succ(n) vertices.
+
+B. There exists a clean core G in C_n^{a,b} and a connection map chi
+   such that:
+
+   Phi_{a,b,G}(chi) = empty.
+
+In words:
+
+A clean larger graph exists exactly when a clean core has an empty shadow.
+
+9. Shadow closure theorem
+=========================
+
+If:
+
+C_n^{a,b} is not empty,
+
+and:
+
+for every G in C_n^{a,b}
+and every connection map chi,
+
+Phi_{a,b,G}(chi) is not empty,
+
+then:
+
+C_{succ(n)}^{a,b} is empty.
+
+Therefore:
+
+R(a,b) = succ(n).
+
+10. Falsification criterion
+===========================
+
+To refute the closure claim at a layer, it is enough to find one pair:
+
+G in C_n^{a,b},
+
+chi : V(G) -> {red, blue},
+
+such that:
+
+Phi_{a,b,G}(chi) = empty.
+
+This constructs a clean graph:
+
+H = G + chi
+
+on succ(n) vertices.
+
+11. Quantitative Delta layer
+============================
+
+Define:
+
+Delta_{a,b}(n -> succ(n))
+=
+min_{G in C_n^{a,b}} min_chi |Phi_{a,b,G}(chi)|.
+
+Then:
+
+Delta_{a,b}(n -> succ(n)) > 0
+
+is equivalent to shadow closure at the layer.
+
+A concrete value of Delta is evidence-level data.
+The abstract theory requires only positivity.
+
+12. Named structure
+===================
+
+The theory consists of four named components:
+
+1. Machura Shadow Phi
+2. Forward Shadow Identity
+3. Reverse Shadow Difference Identity
+4. Shadow Closure Theorem
+
+Together they define a one-vertex Ramsey shadow calculus.
+
+13. Core sentence
+=================
+
+No empty shadow over the clean core layer means Ramsey closure at the
+next vertex.
+
+Equivalently:
+
+C_{succ(n)}^{a,b} = empty
+if and only if
+every clean core G in C_n^{a,b} has no empty extension shadow.
+
+
+======================================================================
+SOURCE FILE: 00_FORMULA\WZOR_CIENIA_LICZB_RAMSEY_MACHURA_FULL.txt
+SHA256: cd27e84c13107bec6c86b78d8238ec73cdd251c58f5a81869b6995761d7e1610
+======================================================================
+
+﻿WZÓR CIENIA LICZB RAMSEY MACHURA
+================================
+
+Autor:
+Michał Machura
+
+Status:
+Nowy wynik matematyczny i obliczeniowy dla liczb Ramseya.
+
+Rola MCDO:
+MCDO nie jest nazwą wzoru, twierdzenia ani tabeli.
+MCDO było użyte tylko jako pomocniczy silnik obliczeniowy do sprawnego liczenia grafów, cieni, walidacji i hashy SHA256.
+
+GŁÓWNA DEFINICJA
+================
+
+Dla przypadku Ramseya R(a,b):
+
+critical_n = R(a,b) - 1
+boundary_n = R(a,b)
+
+Niech:
+
+G = graf czerwony na critical_n wierzchołkach
+G^c = complement(G), czyli graf niebieski
+
+Score grafu:
+
+score_{a,b}(G)
+=
+liczba czerwonych K_a w G
++
+liczba niebieskich K_b w G^c
+
+Czysty rdzeń krytyczny:
+
+score_{a,b}(G_critical) = 0
+
+Dodanie nowego wierzchołka opisuje wektor:
+
+x = (x_1, x_2, ..., x_n)
+
+gdzie:
+
+x_i = 1  oznacza, że nowy wierzchołek łączy się czerwono z i
+x_i = 0  oznacza, że nowy wierzchołek łączy się niebiesko z i
+
+Rodziny cieni:
+
+R_{a-1}(G) = zbiór czerwonych klik K(a-1) w G
+B_{b-1}(G^c) = zbiór niebieskich klik K(b-1) w G^c
+
+Wzór cienia:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_{a-1}(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_{b-1}(G^c)} Π_{i ∈ B} (1 - x_i)
+
+Tożsamość graniczna:
+
+score_{a,b}(H)
+=
+score_{a,b}(G)
++
+Phi_G(x)
+
+Jeżeli G jest czystym rdzeniem krytycznym, czyli:
+
+score_{a,b}(G) = 0
+
+to:
+
+score_{a,b}(H) = Phi_G(x)
+
+Główna liczba cienia:
+
+shadow_boundary_delta(R(a,b))
+=
+min_x Phi_Gcritical(x)
+
+Dla całej warstwy granicznej:
+
+Delta_{a,b}(critical_n -> boundary_n)
+=
+min_{G ∈ C_{critical_n}^{a,b}}
+min_{x ∈ {0,1}^{critical_n}}
+Phi_G(x)
+
+gdzie:
+
+C_{critical_n}^{a,b}
+=
+{G : |V(G)| = critical_n, score_{a,b}(G) = 0}
+
+ZASTOSOWANIE DO R(5,5)
+======================
+
+Dla R(5,5):
+
+critical_n = 42
+boundary_n = 43
+
+C_{42}^{5,5}
+=
+{G : |V(G)| = 42, score_{5,5}(G) = 0}
+
+czyli zbiór wszystkich czystych rdzeni krytycznych K42 bez czerwonego K5 i bez niebieskiego K5.
+
+Dla każdego takiego rdzenia:
+
+Phi_G(x)
+=
+Σ_{A ∈ R_4(G)} Π_{i ∈ A} x_i
++
+Σ_{B ∈ B_4(G^c)} Π_{i ∈ B} (1 - x_i)
+
+Główny wynik:
+
+Delta_{5,5}(42 -> 43)
+=
+min_{G ∈ C_{42}^{5,5}}
+min_{x ∈ {0,1}^{42}}
+Phi_G(x)
+=
+2
+
+Ponieważ:
+
+Delta_{5,5}(42 -> 43) = 2 > 0
+
+każde dodanie 43. wierzchołka do czystego rdzenia K42 tworzy co najmniej dwa konflikty Ramseyowskie K5.
+
+Zatem nie istnieje czyste kolorowanie K43 bez monochromatycznego K5.
+
+Czyli:
+
+R(5,5) <= 43
+
+Ponieważ istnieje czysty rdzeń K42:
+
+score_{5,5}(G_42) = 0
+
+to:
+
+R(5,5) > 42
+
+czyli:
+
+R(5,5) >= 43
+
+Razem:
+
+R(5,5) = 43
+
+Wartość cienia:
+
+shadow_boundary_delta(R(5,5)) = 2
+
+
+
+======================================================================
+SOURCE FILE: 03_EVIDENCE\EVIDENCE_INDEX.txt
+SHA256: e34dbe939f013e9c87ec7f8a11af8f4d383a49a9e4d28a61981dfb8dcd854fcd
+======================================================================
+
+﻿
+[20260514_002128]
+TYPE: V01_SAMPLE3_REVERSAL_VALIDATION
+FILE: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\03_EVIDENCE\V01_SAMPLE3_REVERSAL_VALIDATION_SUMMARY_20260514_002128.txt
+SHA256: 9B0F9AD29636D2F73E2A89CA49486B3FD20520C9B503A591BA516796B7646A8C
+RUN: C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_REVERSAL_V01_SAMPLE3_20260514_001657
+STATUS: DONE
+
+[20260514_003302]
+TYPE: V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS
+FILE: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\00_FORMULA\V04_THEORETICAL_SHADOW_CLOSURE_NO_NUMBERS_20260514_003302.txt
+SHA256: 8E298C39E2F86C8A4A1846AE56E016E5406D0A63C81BFC7ABFFDCE918FAC46B8
+STATUS: THEORY_CLOSED_NO_NUMERICAL_PARAMETERS
+NOTES: Forward identity, reverse identity, vertex-sum identity, reversal lemma, shadow closure theorem, falsification criterion.
+
+[20260514_004258]
+TYPE: V05_MACHURA_SHADOW_THEOREM_MAP_ONE_VIEW
+FILE: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\00_FORMULA\V05_MACHURA_SHADOW_THEOREM_MAP_20260514_004258.txt
+SHA256: D5389C99000C09CE1A1954D84DFADD8F977570EF8D6743441542603A6BE1E032
+STATUS: THEORY_MAP_CREATED
+NOTES: One-view formal map with standard Ramsey terminology, shadow identities, reversal equivalence, closure theorem, falsification criterion, and Delta layer.
+
+
+
+======================================================================
+SOURCE FILE: 03_EVIDENCE\V01_SAMPLE3_REVERSAL_VALIDATION_SUMMARY_20260514_002128.txt
+SHA256: 9b0f9ad29636d2f73e2a89ca49486b3fd20520c9b503a591ba516796b7646a8c
+======================================================================
+
+MACHURA SHADOW REVERSAL VALIDATION V01 SAMPLE3
+==============================================
+
+Run:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_REVERSAL_V01_SAMPLE3_20260514_001657
+
+Purpose:
+Local logical validation of the shadow increment identity and reversal lemma.
+
+This run does not enumerate Delta.
+This run validates the definitions on real clean Ramsey cores.
+
+Result:
+total_records = 3
+clean_h_records = 3
+reverse_lemma_ok_for_clean_h_records = 3
+status = DONE
+
+Interpretation:
+For every tested clean H, deleting vertices produced clean cores G,
+and the reconstructed connection map chi gave empty shadow Phi_G(chi)=0.
+
+Validated identity:
+Conf(G + chi) = Conf(G) union Phi_G(chi)
+
+Validated reversal:
+clean H exists
+if and only if
+there exists a clean core G with empty shadow Phi_G(chi).
+
+Boundary note:
+The tested H records are K42 records, so this validates the logical mechanism
+on deletion K42 -> K41. It is not the full R(5,5) boundary audit.
+
+Full Delta evidence remains:
+R55_ALL_KNOWN_K42_DELTA_AUDIT_V02_FULL_20260513_113607
+
+Full audit result:
+Phi=0 excluded for 674/674 records.
+Phi=1 excluded for 674/674 records.
+A Phi=2 witness exists.
+
+Conclusion:
+V01_SAMPLE3 supports the formal shadow-reversal lemma.
+The full Delta=2 claim is supported by the separate 674/674 audit.
+
+
+======================================================================
+SOURCE FILE: 03_EVIDENCE\V03_SHADOW_DIFFERENCE_VALIDATION_SAMPLE3_20260514_002943.txt
+SHA256: 98c9a33da24f44a57690db3821ad0b8fbfc0fbd33d2be95d625997c82b04a311
+======================================================================
+
+MACHURA SHADOW DIFFERENCE VALIDATION V03 SAMPLE3
+================================================
+
+Run:
+C:\mcdo_ramsey_MASTER43\03_RUNS_PRIVATE\MACHURA_SHADOW_DIFFERENCE_V03_SAMPLE3_20260514_002533
+
+Purpose:
+Validation of reverse/difference form of the Machura Shadow Formula.
+
+This run checks that the shadow of a deleted vertex equals the score difference
+between the full graph H and the vertex-deleted core H-v.
+
+Checked identities:
+
+1. Total difference:
+Phi_{H-v}(chi_v) = score(H) - score(H-v)
+
+2. Red component:
+red_phi_v = red_score(H) - red_score(H-v)
+
+3. Blue component:
+blue_phi_v = blue_score(H) - blue_score(H-v)
+
+4. Vertex-sum identity:
+sum_v |Phi_v(H)| = a * RedK_a(H) + b * BlueK_b(H^c)
+
+Result:
+status = PASS_SHADOW_DIFFERENCE_V03
+total_records = 3
+difference_ok_records = 3
+color_difference_ok_records = 3
+handshake_identity_ok_records = 3
+
+Interpretation:
+The Machura Shadow Formula is validated in reverse form on the tested real clean Ramsey cores.
+
+Core theoretical conclusion:
+The shadow of a vertex is exactly the part of the Ramsey conflict score
+that disappears when the vertex is removed.
+
+This supports the bidirectional theory:
+
+Forward:
+score(G + chi) = score(G) + Phi_G(chi)
+
+Reverse:
+Phi_{H-v}(chi_v) = score(H) - score(H-v)

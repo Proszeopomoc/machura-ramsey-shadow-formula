@@ -1,0 +1,48 @@
+{
+  "case_name": "R(3,3)",
+  "a": 3,
+  "b": 3,
+  "source_n": 4,
+  "critical_n": 5,
+  "boundary_n": 6,
+  "shadow_boundary_delta": 2,
+  "status": "PASS_EXPECTED_PHI0_COUNT",
+  "phi0_source_rows": 12,
+  "reconstructed_clean_graphs_n_plus_1": 12,
+  "graphs_with_phi0_to_next_layer": 0,
+  "total_phi0_to_next_layer": 0,
+  "total_phi1_to_next_layer": 0,
+  "total_phi2_to_next_layer": 240,
+  "global_min_phi_to_next_layer": 2,
+  "global_phi_hist_to_next_layer": {
+    "2": 240,
+    "3": 120,
+    "5": 24
+  },
+  "local_delta_distribution": {
+    "2": 12
+  },
+  "graphs_analyzed_by_v16": 12,
+  "witness_summary": {
+    "exists": true,
+    "total_minimal_witnesses": 240,
+    "type_distribution": {
+      "red_phi=0;blue_phi=2": 60,
+      "red_phi=1;blue_phi=1": 120,
+      "red_phi=2;blue_phi=0": 60
+    },
+    "degree_distribution": {
+      "degree=2": 120,
+      "degree=3": 120
+    },
+    "per_core_min": 20,
+    "per_core_max": 20,
+    "per_core_average": 20.0
+  },
+  "source_files": {
+    "transition_report": "C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_TRANSITION_V12_R33_K5_TO_K6_20260514_193755\\REPORT_SHADOW_TRANSITION_FROM_PHI0_V12.json",
+    "transition_report_sha256": "3541ab974663350d1a88663bc57a77ddfa388f5f0904d0860ba4aa1a46ba65e8",
+    "v16_report": "C:\\mcdo_ramsey_MASTER43\\03_RUNS_PRIVATE\\MACHURA_SHADOW_COORDINATE_PROFILER_V16_R33_N5_20260514_233650\\REPORT_SHADOW_COORDINATE_PROFILER_V16.json",
+    "v16_report_sha256": "e77a3f38db96abfd901d4036d5bdae2a65afbf1d05f82b8fb400b2bd21acbd62"
+  }
+}

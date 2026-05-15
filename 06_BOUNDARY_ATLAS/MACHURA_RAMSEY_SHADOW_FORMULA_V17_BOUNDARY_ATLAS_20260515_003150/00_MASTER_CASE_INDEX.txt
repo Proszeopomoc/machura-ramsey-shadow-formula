@@ -1,0 +1,21 @@
+MACHURA RAMSEY SHADOW FORMULA V17 - BOUNDARY ATLAS
+===================================================
+
+Purpose:
+Standardized case packages using official terminology from the Machura Ramsey Shadow Formula.
+
+Cases:
+
+case_name: R(3,3)
+critical_n: 5
+boundary_n: 6
+shadow_boundary_delta: 2
+local_delta_distribution: {"2": 12}
+case_dir: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\06_BOUNDARY_ATLAS\MACHURA_RAMSEY_SHADOW_FORMULA_V17_BOUNDARY_ATLAS_20260515_003150\CASE_R3_3
+
+case_name: R(3,4)
+critical_n: 8
+boundary_n: 9
+shadow_boundary_delta: 1
+local_delta_distribution: {"1": 10080, "2": 7560}
+case_dir: C:\mcdo_ramsey_MASTER43\wzor_cienia_ramseya_machura\06_BOUNDARY_ATLAS\MACHURA_RAMSEY_SHADOW_FORMULA_V17_BOUNDARY_ATLAS_20260515_003150\CASE_R3_4
