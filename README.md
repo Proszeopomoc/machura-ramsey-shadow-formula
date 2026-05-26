@@ -4,7 +4,7 @@ Author: Michał Machura
 
 ## Main result
 
-**R(5,5) = 43**
+**R(5,5) = 42**
 
 ## Main boundary value
 
@@ -136,7 +136,7 @@ Delta_{5,5}(42 -> 43)
 Conclusion:
 
 ```text
-R(5,5) = 43
+R(5,5) = 42
 ```
 
 <!-- END_CORE_FORMULA_R55_BLOCK -->
