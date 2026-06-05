@@ -4,7 +4,7 @@ Author: Michał Machura
 
 ## Main result
 
-**R(5,5) = 42**
+**R(5,5) = 43**
 
 ## Main boundary value
 
